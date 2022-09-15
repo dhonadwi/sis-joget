@@ -264,6 +264,15 @@
                </packageParticipant>
             </entry>
             <entry>
+               <string>registerSurveyV3::surveyor</string>
+               <packageParticipant>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <participantId>surveyor</participantId>
+                  <type>workflowVariable</type>
+                  <value>surveyor,user</value>
+               </packageParticipant>
+            </entry>
+            <entry>
                <string>register_approver_process::register_applicant</string>
                <packageParticipant>
                   <processDefId>register_approver_process</processDefId>
