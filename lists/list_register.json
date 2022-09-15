@@ -26,7 +26,11 @@
                     "customHeaderColor": "",
                     "exportOptions": "",
                     "listId": "approvalList",
-                    "requestParams": []
+                    "requestParams": [{
+                        "defaultValue": "",
+                        "hrefColumn": "register_id",
+                        "param": "d-4890727-fn_register_id"
+                    }]
                 }
             },
             "headerAlignment": "",
