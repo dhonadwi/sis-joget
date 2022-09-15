@@ -214,7 +214,7 @@
                         "numOfDecimal": "0",
                         "postfix": "",
                         "prefix": "Rp.",
-                        "readonlyLabel": "true",
+                        "readonlyLabel": "",
                         "storeNumeric": "true",
                         "style": "euro",
                         "useThousandSeparator": "true",
@@ -348,7 +348,7 @@
                         "autoPopulate": "",
                         "id": "field11",
                         "label": "",
-                        "value": "<script>\n   $( document ).ready(function() {\n       const gajiBersih = document.querySelector('#gaji_bersih');\n       \n       gajiBersih.addEventListener('change', function(event) {\n           alert(gajiBersih.value);\n       })\n   }\n<\/script>"
+                        "value": "<script>\n   $( document ).ready(function() {\n       const gajiBersih = document.querySelector('#gaji_bersih')\n       \n       gajiBersih.addEventListener('change', function(event) {\n           alert(gajiBersih.value);\n       })\n   }\n<\/script>"
                     }
                 }
             ],
