@@ -1,42 +1,37 @@
 {
     "actions": [],
     "binder": {
-        "className": "org.joget.apps.datalist.lib.FormRowDataListBinder",
+        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
         "properties": {
+            "aggregateField": [],
+            "customSelectionValue": "",
             "extraCondition": "",
-            "formDefId": "formV3InputApproval"
+            "filters": [],
+            "formDefId": "formV3InputApproval",
+            "functionColumns": [],
+            "groupBy": "",
+            "joins": [{
+                "fieldId": "sis_register.register_id",
+                "joinFieldId": "register_id",
+                "tableName": "sis_register"
+            }]
         }
     },
     "buttonPosition": "bottomLeft",
     "checkboxPosition": "left",
     "columns": [
         {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
             "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
             "hidden": "false",
-            "id": "column_6",
-            "include_export": "",
-            "label": "register_id",
-            "name": "register_id",
-            "sortable": "false",
-            "style": "",
-            "width": ""
+            "id": "column_0",
+            "label": "sis_register.ID",
+            "name": "sis_register.id",
+            "sortable": "false"
         },
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_7",
+            "id": "column_3",
             "label": "Plafond ACC",
             "name": "plafond_acc",
             "sortable": "false"
@@ -44,7 +39,7 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_8",
+            "id": "column_1",
             "label": "Tenor ACC",
             "name": "tenor_acc",
             "sortable": "false"
@@ -52,26 +47,17 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_9",
+            "id": "column_2",
             "label": "Status",
             "name": "status",
             "sortable": "false"
         },
         {
-            "datalist_type": "column",
             "filterable": true,
             "hidden": "false",
             "id": "column_4",
-            "label": "Created By Name",
-            "name": "createdByName",
-            "sortable": "false"
-        },
-        {
-            "filterable": true,
-            "hidden": "false",
-            "id": "column_5",
-            "label": "Date Modified",
-            "name": "dateModified",
+            "label": "sis_register.keterangan",
+            "name": "sis_register.keterangan",
             "sortable": "false"
         }
     ],
@@ -81,19 +67,20 @@
     "filters": [{
         "datalist_type": "filter",
         "filterParamName": "d-4890727-fn_register_id",
-        "id": "filter_1",
+        "hidden": "",
+        "id": "filter_0",
         "label": "register_id",
         "name": "register_id",
         "type": {
             "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-            "properties": {}
+            "properties": {"defaultValue": ""}
         }
     }],
     "hidePageSize": "",
     "id": "approvalList",
     "name": "Approval List",
-    "order": "1",
-    "orderBy": "dateModified",
+    "order": "",
+    "orderBy": "",
     "pageSize": "0",
     "pageSizeSelectorOptions": "10,20,30,40,50,100",
     "responsiveView": [
