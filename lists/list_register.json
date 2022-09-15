@@ -25,7 +25,7 @@
                     "addEmptyRow": "true",
                     "customHeaderColor": "",
                     "exportOptions": "",
-                    "listId": "listLaporanSurvey",
+                    "listId": "approvalList",
                     "requestParams": []
                 }
             },
