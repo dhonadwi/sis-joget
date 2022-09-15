@@ -64,17 +64,6 @@
                </packageActivityForm>
             </entry>
             <entry>
-               <string>processCobain::activity4</string>
-               <packageActivityForm>
-                  <processDefId>processCobain</processDefId>
-                  <activityDefId>activity4</activityDefId>
-                  <formId>formV3ViewInputSurvey</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
                <string>submitRegisterV2::analisis</string>
                <packageActivityForm>
                   <processDefId>submitRegisterV2</processDefId>
