@@ -42,17 +42,6 @@
                </packageActivityForm>
             </entry>
             <entry>
-               <string>registerSurveyV3::hasilReject</string>
-               <packageActivityForm>
-                  <processDefId>registerSurveyV3</processDefId>
-                  <activityDefId>hasilReject</activityDefId>
-                  <formId>formv3HasilApprovalV2</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>true</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-            <entry>
                <string>registerSurveyV3::submitRegisterSurveyV3</string>
                <packageActivityForm>
                   <processDefId>registerSurveyV3</processDefId>
