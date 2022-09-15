@@ -23,9 +23,9 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_5",
-            "label": "register_id",
-            "name": "register_id",
+            "id": "column_0",
+            "label": "sis_register.ID",
+            "name": "sis_register.id",
             "sortable": "false"
         },
         {
