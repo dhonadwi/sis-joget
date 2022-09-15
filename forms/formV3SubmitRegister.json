@@ -233,6 +233,15 @@
                         },
                         "subFormParentId": "audit_id"
                     }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field11",
+                        "label": "",
+                        "value": "<script>\n    $(document).ready(function() {\n        console.log('haha');\n    })\n<\/script>"
+                    }
                 }
             ],
             "properties": {"width": "100%"}
