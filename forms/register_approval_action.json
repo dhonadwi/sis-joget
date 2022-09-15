@@ -1,0 +1,137 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "elementUniqueKey": "4914",
+                        "id": "parent_id",
+                        "useDefaultWhenEmpty": "",
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "elementUniqueKey": "4915",
+                        "id": "approver",
+                        "useDefaultWhenEmpty": "",
+                        "value": "#currentUser.username#",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "elementUniqueKey": "4916",
+                        "id": "approval_date",
+                        "useDefaultWhenEmpty": "",
+                        "value": "#date.yyyy-MM-dd HH:mm#",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "elementUniqueKey": "4917",
+                        "id": "status",
+                        "label": "Status",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "",
+                                "value": ""
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Clarification Required",
+                                "value": "Clarification Required"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Approved",
+                                "value": "Approved"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Rejected",
+                                "value": "Rejected"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "custom-regex": "",
+                                "mandatory": "true",
+                                "message": "",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": "status"
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.RichTextEditorField",
+                    "properties": {
+                        "elementUniqueKey": "4918",
+                        "id": "remarks",
+                        "label": "Remarks",
+                        "readonly": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": ""
+                    }
+                }
+            ],
+            "properties": {
+                "elementUniqueKey": "4908",
+                "width": "100%"
+            }
+        }],
+        "properties": {
+            "elementUniqueKey": "4896",
+            "id": "section1",
+            "label": "",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "regex": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
+        }
+    }],
+    "properties": {
+        "elementUniqueKey": "4895",
+        "id": "register_approval_action",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Submit Register Approval Action",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "sis_register_a"
+    }
+}

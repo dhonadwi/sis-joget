@@ -1,0 +1,272 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [
+                {
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "formDefId": "formV3SubmitRegister",
+                        "id": "field8",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "",
+                        "parentSubFormId": "",
+                        "permissionHidden": "",
+                        "readonly": "true",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "formDefId": "formV3ViewInputSurvey",
+                        "id": "subformInputSurvey",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "",
+                        "parentSubFormId": "",
+                        "permissionHidden": "",
+                        "readonly": "true",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.HiddenField",
+                    "properties": {
+                        "id": "register_id",
+                        "useDefaultWhenEmpty": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "#form.sis_register.register_id#",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "plafond_acc",
+                        "label": "Plafond ACC",
+                        "maxlength": "",
+                        "numOfDecimal": "0",
+                        "placeholder": "",
+                        "postfix": "",
+                        "prefix": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "true",
+                        "style": "euro",
+                        "useThousandSeparator": "true",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "tenor_acc",
+                        "label": "Tenor ACC",
+                        "maxlength": "",
+                        "numOfDecimal": "0",
+                        "placeholder": "",
+                        "postfix": "Months",
+                        "prefix": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "true",
+                        "style": "euro",
+                        "useThousandSeparator": "true",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": "numeric"
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SelectBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "status",
+                        "label": "Status",
+                        "multiple": "",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "",
+                                "value": ""
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Reject",
+                                "value": "rejected"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Approved",
+                                "value": "approved"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": "status"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "formDefId": "formV3ViewAuditTrails",
+                        "id": "field7",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "",
+                        "parentSubFormId": "",
+                        "permissionHidden": "",
+                        "readonly": "true",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "formDefId": "formv3AuditTrailsSurvey",
+                        "id": "field10",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "true",
+                        "parentSubFormId": "register_iddd",
+                        "permissionHidden": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": "audit_id"
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.CustomHTML",
+                    "properties": {
+                        "autoPopulate": "",
+                        "id": "field9",
+                        "label": "",
+                        "value": "<script type=\"text/javascript\">\r\n    $( document ).ready(function() {\r\n        \r\n    const plafond = document.querySelector('#field8_formV3SubmitRegister_plafond');\r\n    const plafondAcc = document.querySelector('#plafond_acc');\r\n    const keterangan = $('[name=field10_formv3AuditTrailsSurvey_keterangan]');\r\n    const keterangan2 = $('[name=field10_formv3AuditTrailsSurvey_field5]');\r\n    const tenorAcc = $('[name=tenor_acc]');\r\n    \r\n    plafondAcc.value = plafond.value;\r\n    \r\n    $(plafondAcc).keyup(function(){\r\n      const plafondAwal = plafond.value.split('.').join('')\r\n      const plafondAnalis = plafondAcc.value.split('.').join('')\r\n      if( parseInt(plafondAnalis) > parseInt(plafondAwal)) {\r\n       alert('Nominal tidak boleh melebihi plafond pengajuan')\r\n       plafondAcc.value= plafondAwal   \r\n      }\r\n      \r\n    });\r\n    \r\n    $('[name=status]').on('change', function() {\r\n        if(this.value == 'approved'){\r\n            keterangan.val('Pengajuan disetujui. Plafond: ' + plafondAcc.value + ' . Tenor: ' + tenorAcc.val())\r\n        }else{\r\n            keterangan.val('Pengajuan ditolak!')\r\n        }\r\n    });\r\n    \r\n    tenorAcc.on('change', function() {\r\n        if($('[name=status]').val() == 'approved'){\r\n            keterangan.val('Pengajuan disetujui. Plafond: ' + plafondAcc.value + ' . Tenor: ' + tenorAcc.val())\r\n        }else{\r\n            keterangan.val('Pengajuan ditolak!')\r\n        }\r\n    })\r\n    \r\n   \r\n    });\r\n    \r\n<\/script>"
+                    }
+                }
+            ],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "inputApproval",
+            "join": "",
+            "label": "Input Approval",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "regex": "",
+            "reverse": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "formV3InputApproval",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "v3-4 Input Approval",
+        "noPermissionMessage": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "postProcessorRunOn": "both",
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "sis_approval"
+    }
+}

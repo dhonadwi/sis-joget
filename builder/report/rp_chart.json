@@ -1,0 +1,211 @@
+{
+    "body": {"elements": [
+        {
+            "className": "org.joget.rbuilder.lib.ColumnsReportElement",
+            "elements": [
+                {
+                    "className": "org.joget.rbuilder.lib.ColumnReportElement",
+                    "elements": [{
+                        "className": "org.joget.rbuilder.lib.ChartReportElement",
+                        "properties": {
+                            "binder": {
+                                "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                                "properties": {
+                                    "aggregateField": [{
+                                        "field": "survey",
+                                        "function": "AFD_COUNT_"
+                                    }],
+                                    "customSelectionValue": "",
+                                    "extraCondition": "",
+                                    "filters": [],
+                                    "formDefId": "formV3Analisis",
+                                    "functionColumns": [],
+                                    "groupBy": "survey",
+                                    "having": [],
+                                    "joins": []
+                                }
+                            },
+                            "categoryAxisLabel": "Survey",
+                            "chartHeight": "50%",
+                            "chartType": "bar",
+                            "chartWidth": "100%",
+                            "colors": "",
+                            "halign": "center",
+                            "id": "70D785AF-B84E-400C-5388-FAFDE259010B",
+                            "mapping_dateformat": "",
+                            "mapping_x": "survey",
+                            "mapping_ys": [{
+                                "legend": "survey",
+                                "y": "AFD_COUNT_survey"
+                            }],
+                            "marginBottom": "10px",
+                            "selectorClass": "",
+                            "showLegend": "true",
+                            "showValueLabel": "true",
+                            "sortingOrder": "DESC",
+                            "sortingOrderByColumn": "",
+                            "stack": "",
+                            "title": "",
+                            "valueAxisLabel": "Account Survey",
+                            "xAxisDisplayAS": "",
+                            "yaxisPrefix": ""
+                        }
+                    }],
+                    "properties": {}
+                },
+                {
+                    "className": "org.joget.rbuilder.lib.ColumnReportElement",
+                    "elements": [{
+                        "className": "org.joget.rbuilder.lib.ChartReportElement",
+                        "properties": {
+                            "binder": {
+                                "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                                "properties": {
+                                    "aggregateField": [{
+                                        "field": "keterangan",
+                                        "function": "AFD_COUNT_"
+                                    }],
+                                    "customSelectionValue": "",
+                                    "extraCondition": "",
+                                    "filters": [],
+                                    "formDefId": "formv3HasilApprovalV2",
+                                    "functionColumns": [],
+                                    "groupBy": "keterangan",
+                                    "having": [],
+                                    "joins": []
+                                }
+                            },
+                            "categoryAxisLabel": "Pencairan",
+                            "chartHeight": "480",
+                            "chartType": "bar",
+                            "chartWidth": "640",
+                            "colors": "",
+                            "halign": "left",
+                            "id": "9D3B34F1-F247-43CF-F448-AEAF8D96371C",
+                            "mapping_dateformat": "",
+                            "mapping_legend": "keterangan",
+                            "mapping_value": "AFD_COUNT_keterangan",
+                            "mapping_x": "keterangan",
+                            "mapping_ys": [{
+                                "legend": "Pencairan",
+                                "y": "AFD_COUNT_keterangan"
+                            }],
+                            "marginBottom": "10px",
+                            "selectorClass": "",
+                            "showLegend": "true",
+                            "showValue": "",
+                            "showValueLabel": "true",
+                            "sortingOrder": "DESC",
+                            "sortingOrderByColumn": "",
+                            "stack": "",
+                            "title": "",
+                            "valueAxisLabel": "Jumlah",
+                            "xAxisDisplayAS": "",
+                            "yaxisPrefix": ""
+                        }
+                    }],
+                    "properties": {}
+                }
+            ],
+            "properties": {
+                "display_border": "false",
+                "gap": "1%",
+                "id": "83F04DDD-4E5A-4677-0A01-81F29793D504",
+                "marginBottom": "10px",
+                "type": "1"
+            }
+        },
+        {
+            "className": "org.joget.rbuilder.lib.HorizontalLineReportElement",
+            "properties": {
+                "color": "#000000",
+                "id": "02068868-8BA2-41B6-F8FF-3D3FE5AA91D9",
+                "size": "2px",
+                "style": "solid"
+            }
+        },
+        {
+            "className": "org.joget.rbuilder.lib.ColumnsReportElement",
+            "elements": [
+                {
+                    "className": "org.joget.rbuilder.lib.ColumnReportElement",
+                    "elements": [{
+                        "className": "org.joget.rbuilder.lib.ChartReportElement",
+                        "properties": {
+                            "binder": {
+                                "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                                "properties": {
+                                    "aggregateField": [{
+                                        "field": "status",
+                                        "function": "AFD_COUNT_"
+                                    }],
+                                    "customSelectionValue": "",
+                                    "extraCondition": "",
+                                    "filters": [],
+                                    "formDefId": "formV3InputApproval",
+                                    "functionColumns": [],
+                                    "groupBy": "status",
+                                    "having": [],
+                                    "joins": []
+                                }
+                            },
+                            "categoryAxisLabel": "Category",
+                            "chartHeight": "480",
+                            "chartType": "bar",
+                            "chartWidth": "640",
+                            "colors": "",
+                            "halign": "left",
+                            "id": "3694B3AE-792B-4027-2C2A-981C8AD17053",
+                            "mapping_dateformat": "",
+                            "mapping_x": "status",
+                            "mapping_ys": [{
+                                "legend": "Approval",
+                                "y": "AFD_COUNT_status"
+                            }],
+                            "marginBottom": "10px",
+                            "selectorClass": "",
+                            "showLegend": "true",
+                            "showValueLabel": "",
+                            "sortingOrder": "DESC",
+                            "sortingOrderByColumn": "",
+                            "stack": "",
+                            "title": "",
+                            "valueAxisLabel": "Value",
+                            "xAxisDisplayAS": "",
+                            "yaxisPrefix": ""
+                        }
+                    }],
+                    "properties": {}
+                },
+                {
+                    "className": "org.joget.rbuilder.lib.ColumnReportElement",
+                    "elements": [],
+                    "properties": {}
+                }
+            ],
+            "properties": {
+                "display_border": "false",
+                "gap": "1%",
+                "id": "5916F754-04E8-49B6-B018-F2CEF0194742",
+                "marginBottom": "10px",
+                "type": "1"
+            }
+        }
+    ]},
+    "footer": {"elements": []},
+    "header": {"elements": []},
+    "properties": {
+        "bottomMargin": "10",
+        "description": "",
+        "id": "rp_chart",
+        "leftMargin": "10",
+        "margins": "normal",
+        "name": "Report Chart Survey & Pencairan",
+        "orientation": "portrait",
+        "pageHeight": "297",
+        "pageWidth": "210",
+        "paperSize": "a4",
+        "rightMargin": "10",
+        "topMargin": "10"
+    }
+}

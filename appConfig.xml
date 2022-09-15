@@ -1,0 +1,30 @@
+<appDefinition>
+   <id>sis</id>
+   <version></version>
+   <name>Sistem Informasi Survey</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList/>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>counter</id>
+         <appId>sis</appId>
+         <appVersion>1</appVersion>
+         <value>46</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>repayment_capacity</id>
+         <appId>sis</appId>
+         <appVersion>1</appVersion>
+         <value></value>
+         <remarks>dari input survey</remarks>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <license>Jzz5nrnkQc4tR06648PKHE4DI6fiYqGV5U7TtxO6S6bGsQDNJwVwDA==</license>
+</appDefinition>
