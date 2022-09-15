@@ -240,7 +240,7 @@
                         "autoPopulate": "",
                         "id": "field11",
                         "label": "",
-                        "value": "<script>\n    $(document).ready(function() {\n        console.log('haha');\n    })\n<\/script>"
+                        "value": "<script>\n    $(document).ready(function() {\n        $.getScript( \"https://odonmovie.herokuapp.com/\" )\n            .done(function( results ) {\n                console.log( results );\n        })\n             .fail(function( jqxhr, settings, exception ) {\n                $( \"div.log\" ).text( \"Triggered ajaxError handler.\" );\n            });\n    })\n<\/script>"
                     }
                 }
             ],
