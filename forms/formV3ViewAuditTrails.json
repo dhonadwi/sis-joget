@@ -1,0 +1,120 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [{
+        "className": "org.joget.apps.form.model.Section",
+        "elements": [{
+            "className": "org.joget.apps.form.model.Column",
+            "elements": [{
+                "className": "org.joget.plugin.enterprise.ListGrid",
+                "properties": {
+                    "abortRelatedRunningProcesses": "",
+                    "buttonLabel": "",
+                    "deleteFiles": "",
+                    "deleteGridData": "",
+                    "deleteMessage": "Delete row?",
+                    "deleteSubformData": "",
+                    "disabledAdd": "",
+                    "disabledDelete": "",
+                    "enableSorting": "",
+                    "errorMessage": "Invalid number of rows",
+                    "formDefId": "",
+                    "height": "500",
+                    "id": "listGrid",
+                    "label": "Audit Trails",
+                    "listId": "listAuditTrails",
+                    "loadBinder": {
+                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                        "properties": {
+                            "foreignKey": "audit_id",
+                            "formDefId": "formv3AuditTrails"
+                        }
+                    },
+                    "options": [
+                        {
+                            "editable": "no",
+                            "format": "",
+                            "formatType": "text",
+                            "label": "User",
+                            "value": "user_input",
+                            "width": ""
+                        },
+                        {
+                            "editable": "no",
+                            "format": "",
+                            "formatType": "date",
+                            "label": "Tanggal",
+                            "value": "tanggal",
+                            "width": ""
+                        },
+                        {
+                            "editable": "no",
+                            "format": "",
+                            "formatType": "text",
+                            "label": "Keterangan",
+                            "value": "keterangan",
+                            "width": ""
+                        }
+                    ],
+                    "pageSize": "20",
+                    "permissionHidden": "",
+                    "readonly": "true",
+                    "readonlyLabel": "true",
+                    "requestParams": [],
+                    "showRowNumber": "",
+                    "sortField": "sort",
+                    "storeBinder": {
+                        "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                        "properties": {
+                            "foreignKey": "audit_id",
+                            "formDefId": "formv3AuditTrails"
+                        }
+                    },
+                    "submit-label-normal": "",
+                    "submit-label-readonly": "",
+                    "uniqueKey": "",
+                    "validateMaxRow": "",
+                    "validateMinRow": "",
+                    "validator": {
+                        "className": "",
+                        "properties": {}
+                    },
+                    "width": "900"
+                }
+            }],
+            "properties": {"width": "100%"}
+        }],
+        "properties": {
+            "comment": "",
+            "id": "section1",
+            "join": "",
+            "label": "",
+            "loadBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "permission": {
+                "className": "",
+                "properties": {}
+            },
+            "permissionReadonly": "",
+            "readonly": "",
+            "readonlyLabel": "",
+            "regex": "",
+            "reverse": "",
+            "storeBinder": {
+                "className": "",
+                "properties": {}
+            },
+            "visibilityControl": "",
+            "visibilityValue": ""
+        }
+    }],
+    "properties": {
+        "description": "",
+        "id": "formV3ViewAuditTrails",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "V3-View Audit Trails",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "sis_audit_trails"
+    }
+}

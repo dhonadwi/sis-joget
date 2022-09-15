@@ -1,0 +1,194 @@
+{
+    "categories": [{
+        "className": "org.joget.apps.userview.model.UserviewCategory",
+        "menus": [
+            {
+                "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                "properties": {
+                    "appFilter": "all",
+                    "assignment-customFooter": "",
+                    "assignment-customHeader": "",
+                    "cacheAllLinks": "",
+                    "cacheListAction": "",
+                    "customId": "register_inbox",
+                    "datalistId": "list_register",
+                    "enableOffline": "",
+                    "id": "0883ea80-2c64-4f76-8587-40881ad4c88d",
+                    "keyName": "",
+                    "label": "Inbox",
+                    "list-customFooter": "",
+                    "list-customHeader": "",
+                    "rowCount": "true",
+                    "showDetail": "",
+                    "showPopup": "",
+                    "userviewCacheDuration": "",
+                    "userviewCacheScope": ""
+                }
+            },
+            {
+                "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                "properties": {
+                    "binder": {
+                        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                        "properties": {
+                            "aggregateField": [{
+                                "field": "survey",
+                                "function": "AFD_COUNT_"
+                            }],
+                            "customSelectionValue": "",
+                            "extraCondition": "",
+                            "filters": [],
+                            "formDefId": "formV3Analisis",
+                            "functionColumns": [],
+                            "groupBy": "survey",
+                            "having": [],
+                            "joins": []
+                        }
+                    },
+                    "categoryAxisLabel": "Survey",
+                    "chartHeight": "50%",
+                    "chartType": "bar",
+                    "chartWidth": "60%",
+                    "colors": "orange",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "",
+                    "datasource": "binder",
+                    "enableOffline": "",
+                    "horizontal": "",
+                    "id": "A03BF2B709D9460BB99A1348ABB13F7E",
+                    "keyName": "",
+                    "label": "Survey Chart",
+                    "mapping_x": "survey",
+                    "mapping_ys": [{
+                        "legend": "Survey",
+                        "y": "AFD_COUNT_survey"
+                    }],
+                    "showLegend": "true",
+                    "showValueLabel": "true",
+                    "sortingOrder": "ASC",
+                    "sortingOrderByColumn": "",
+                    "stack": "",
+                    "title": "Survey  Chart",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": "",
+                    "valueAxisLabel": "Category of Survey",
+                    "xAxisDisplayAS": "",
+                    "yaxisPrefix": ""
+                }
+            },
+            {
+                "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                "properties": {
+                    "binder": {
+                        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                        "properties": {
+                            "aggregateField": [{
+                                "field": "keterangan",
+                                "function": "AFD_COUNT_"
+                            }],
+                            "customSelectionValue": "",
+                            "extraCondition": "",
+                            "filters": [],
+                            "formDefId": "formv3HasilApprovalV2",
+                            "functionColumns": [],
+                            "groupBy": "keterangan",
+                            "having": [],
+                            "joins": []
+                        }
+                    },
+                    "categoryAxisLabel": "Category",
+                    "chartHeight": "50%",
+                    "chartType": "bar",
+                    "chartWidth": "60%",
+                    "colors": "",
+                    "customFooter": "",
+                    "customHeader": "",
+                    "customId": "",
+                    "datasource": "binder",
+                    "enableOffline": "",
+                    "horizontal": "",
+                    "id": "B91479E9E8EE498DABF1A0A0D2541299",
+                    "keyName": "",
+                    "label": "Pencairan Chart",
+                    "mapping_x": "keterangan",
+                    "mapping_ys": [{
+                        "legend": "Pencairan",
+                        "y": "AFD_COUNT_keterangan"
+                    }],
+                    "showLegend": "true",
+                    "showValueLabel": "true",
+                    "sortingOrder": "ASC",
+                    "sortingOrderByColumn": "",
+                    "stack": "",
+                    "title": "Pencairan Chart",
+                    "userviewCacheDuration": "20",
+                    "userviewCacheScope": "",
+                    "valueAxisLabel": "Amount",
+                    "xAxisDisplayAS": "",
+                    "yaxisPrefix": ""
+                }
+            }
+        ],
+        "properties": {
+            "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
+            "label": "<i class=\"fa fa-home\"><\/i>Register Survey"
+        }
+    }],
+    "className": "org.joget.apps.userview.model.Userview",
+    "properties": {
+        "description": "",
+        "footerMessage": "Powered by Joget",
+        "id": "dashboard",
+        "logoutText": "Logout",
+        "name": "Dashboard",
+        "welcomeMessage": "#date.EEE, d MMM yyyy#"
+    },
+    "setting": {"properties": {
+        "hideThisUserviewInAppCenter": "",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "tempDisablePermissionChecking": "",
+        "theme": {
+            "className": "org.joget.plugin.enterprise.ProgressiveTheme",
+            "properties": {
+                "accentColor": "BLUE",
+                "buttonColor": "ORANGE",
+                "buttonTextColor": "WHITE",
+                "css": "",
+                "disableHelpGuide": "",
+                "disablePush": "",
+                "disablePwa": "",
+                "displayCategoryLabel": "",
+                "enableResponsiveSwitch": "",
+                "fav_icon": "",
+                "fontColor": "WHITE",
+                "fontControl": "",
+                "homeAttractBanner": "",
+                "homeUrl": "",
+                "horizontal_menu": "",
+                "inbox": "",
+                "js": "",
+                "loginPageBottom": "",
+                "loginPageTop": "",
+                "logo": "",
+                "menuFontColor": "BLACK",
+                "primaryColor": "INDIGO",
+                "profile": "",
+                "removeAssignmentTitle": "",
+                "shortcut": [],
+                "shortcutLinkLabel": "",
+                "subfooter": "",
+                "subheader": "",
+                "themeScheme": "light",
+                "urlsToCache": "",
+                "userImage": "",
+                "userMenu": []
+            }
+        },
+        "userviewDescription": "",
+        "userview_thumbnail": "#appResource.computer.png#"
+    }}
+}

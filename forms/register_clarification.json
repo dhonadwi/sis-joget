@@ -1,0 +1,162 @@
+{
+    "className": "org.joget.apps.form.model.Form",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SubForm",
+                    "properties": {
+                        "elementUniqueKey": "5020",
+                        "formDefId": "register",
+                        "id": "subform",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "noframe": "true",
+                        "parentSubFormId": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "storeBinder": {
+                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                            "properties": {}
+                        },
+                        "subFormParentId": ""
+                    }
+                }],
+                "properties": {
+                    "elementUniqueKey": "5018",
+                    "width": "100%"
+                }
+            }],
+            "properties": {
+                "elementUniqueKey": "5014",
+                "id": "section1",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.plugin.enterprise.FormGrid",
+                    "properties": {
+                        "disabledAdd": "true",
+                        "disabledDelete": "true",
+                        "elementUniqueKey": "5027",
+                        "enableSorting": "",
+                        "errorMessage": "Invalid number of rows.",
+                        "formDefId": "register_approval_action",
+                        "height": "500",
+                        "id": "field2",
+                        "label": "",
+                        "loadBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "parent_id",
+                                "formDefId": "register_approval_action"
+                            }
+                        },
+                        "options": [
+                            {
+                                "format": "",
+                                "formatType": "text",
+                                "label": "Approver",
+                                "value": "approver",
+                                "width": ""
+                            },
+                            {
+                                "format": "",
+                                "formatType": "text",
+                                "label": "Status",
+                                "value": "status",
+                                "width": ""
+                            },
+                            {
+                                "format": "",
+                                "formatType": "html",
+                                "label": "Remarks",
+                                "value": "remarks",
+                                "width": ""
+                            },
+                            {
+                                "format": "",
+                                "formatType": "text",
+                                "label": "Date",
+                                "value": "approval_date",
+                                "width": ""
+                            }
+                        ],
+                        "readonly": "true",
+                        "readonlyLabel": "true",
+                        "showRowNumber": "",
+                        "sortField": "sort",
+                        "storeBinder": {
+                            "className": "org.joget.plugin.enterprise.MultirowFormBinder",
+                            "properties": {
+                                "foreignKey": "parent_id",
+                                "formDefId": "register_approval_action"
+                            }
+                        },
+                        "submit-label-normal": "Submit",
+                        "submit-label-readonly": "Close",
+                        "validateMaxRow": "",
+                        "validateMinRow": "",
+                        "width": "900"
+                    }
+                }],
+                "properties": {
+                    "elementUniqueKey": "5025",
+                    "width": "100%"
+                }
+            }],
+            "properties": {
+                "elementUniqueKey": "5021",
+                "id": "section2",
+                "label": "Approval Trails",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "regex": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        }
+    ],
+    "properties": {
+        "elementUniqueKey": "5013",
+        "id": "register_clarification",
+        "loadBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "name": "Submit Register Clarification",
+        "storeBinder": {"className": "org.joget.apps.form.lib.WorkflowFormBinder"},
+        "tableName": "sis_register"
+    }
+}
