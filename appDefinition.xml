@@ -250,7 +250,7 @@
                <packageActivityPlugin>
                   <processDefId>processCobain</processDefId>
                   <activityDefId>route1</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.SimpleTensorFlowAIDecisionPlugin</pluginName>
+                  <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
                </packageActivityPlugin>
             </entry>
          </packageActivityPluginMap>
