@@ -1,5 +1,28 @@
-{"properties": {
-    "description": "",
-    "id": "API-a243033c-b5fa-4d42-87ac-427bdb523426",
-    "name": "Submit Register"
-}}
+{
+    "elements": [
+        {
+            "className": "org.joget.api.lib.AppListAPI",
+            "properties": {
+                "ENABLED_PATHS": "get:/",
+                "id": "B6D15041-9ECE-4042-0D9F-1C16982F91B2",
+                "label": "Get all list data",
+                "listDefId": "list_register"
+            }
+        },
+        {
+            "className": "org.joget.api.lib.AppFormAPI",
+            "properties": {
+                "ENABLED_PATHS": "post:/;get:/{recordId}",
+                "formDefId": "formV3SubmitRegister",
+                "id": "4006C337-AA80-499F-8CFD-2BA183979765",
+                "ignorePermission": "",
+                "label": "Submit register"
+            }
+        }
+    ],
+    "properties": {
+        "description": "",
+        "id": "API-a243033c-b5fa-4d42-87ac-427bdb523426",
+        "name": "Submit Register"
+    }
+}
