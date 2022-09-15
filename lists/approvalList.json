@@ -11,12 +11,26 @@
     "checkboxPosition": "left",
     "columns": [
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
             "filterable": true,
-            "hidden": "false",
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
+            "hidden": "true",
             "id": "column_6",
+            "include_export": "",
             "label": "register_id",
             "name": "register_id",
-            "sortable": "false"
+            "sortable": "false",
+            "style": "",
+            "width": ""
         },
         {
             "filterable": true,
@@ -64,6 +78,8 @@
     "description": "",
     "disableResponsive": "",
     "filters": [{
+        "datalist_type": "filter",
+        "filterParamName": "d-4890727-fn_register_id",
         "id": "filter_1",
         "label": "register_id",
         "name": "register_id",
