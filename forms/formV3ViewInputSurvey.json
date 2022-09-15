@@ -200,14 +200,17 @@
                         "label": "Gaji Bersih",
                         "numOfDecimal": "0",
                         "postfix": "",
-                        "prefix": "Rp.",
+                        "prefix": "",
                         "readonlyLabel": "true",
                         "storeNumeric": "true",
                         "style": "euro",
-                        "useThousandSeparator": "true",
+                        "useThousandSeparator": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.tutorial.TotalValidation",
+                            "properties": {
+                                "mandatory": "true",
+                                "repayment_capacity": "65"
+                            }
                         },
                         "variables": [
                             {
