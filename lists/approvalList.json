@@ -4,7 +4,7 @@
         "className": "org.joget.apps.datalist.lib.FormRowDataListBinder",
         "properties": {
             "extraCondition": "",
-            "formDefId": "register_approval"
+            "formDefId": "formV3InputApproval"
         }
     },
     "buttonPosition": "bottomLeft",
@@ -13,25 +13,33 @@
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_0",
-            "label": "name",
-            "name": "name",
+            "id": "column_6",
+            "label": "register_id",
+            "name": "register_id",
             "sortable": "false"
         },
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_3",
-            "label": "Plafond",
-            "name": "plafond",
+            "id": "column_7",
+            "label": "Plafond ACC",
+            "name": "plafond_acc",
             "sortable": "false"
         },
         {
             "filterable": true,
             "hidden": "false",
-            "id": "column_2",
-            "label": "Tenor",
-            "name": "tenor",
+            "id": "column_8",
+            "label": "Tenor ACC",
+            "name": "tenor_acc",
+            "sortable": "false"
+        },
+        {
+            "filterable": true,
+            "hidden": "false",
+            "id": "column_9",
+            "label": "Status",
+            "name": "status",
             "sortable": "false"
         },
         {
@@ -42,28 +50,6 @@
             "label": "Created By Name",
             "name": "createdByName",
             "sortable": "false"
-        },
-        {
-            "action": {
-                "className": "",
-                "properties": {}
-            },
-            "alignment": "",
-            "datalist_type": "column",
-            "exclude_export": "",
-            "filterable": true,
-            "format": {
-                "className": "",
-                "properties": {}
-            },
-            "headerAlignment": "",
-            "hidden": "false",
-            "id": "column_1",
-            "label": "approval_status",
-            "name": "approval_status",
-            "sortable": "false",
-            "style": "",
-            "width": ""
         },
         {
             "filterable": true,
@@ -78,15 +64,12 @@
     "description": "",
     "disableResponsive": "",
     "filters": [{
-        "datalist_type": "filter",
-        "filterParamName": "d-4890727-fn_approval_status",
-        "hidden": "",
-        "id": "filter_0",
-        "label": "approval_status",
-        "name": "approval_status",
+        "id": "filter_1",
+        "label": "register_id",
+        "name": "register_id",
         "type": {
             "className": "org.joget.apps.datalist.lib.TextFieldDataListFilterType",
-            "properties": {"defaultValue": "Approved"}
+            "properties": {}
         }
     }],
     "hidePageSize": "",
