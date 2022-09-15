@@ -106,6 +106,38 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
+                    "className": "org.joget.api.lib.ApiKeyMenu",
+                    "properties": {
+                        "add-cancelButtonLabel": "",
+                        "add-customFooter": "",
+                        "add-customHeader": "",
+                        "add-messageShowAfterComplete": "",
+                        "add-saveButtonLabel": "",
+                        "apiId": "API-a243033c-b5fa-4d42-87ac-427bdb523426",
+                        "buttonPosition": "bottomLeft",
+                        "checkboxPosition": "left",
+                        "customId": "",
+                        "edit-backButtonLabel": "",
+                        "edit-customFooter": "",
+                        "edit-customHeader": "",
+                        "edit-messageShowAfterComplete": "",
+                        "edit-readonly": "",
+                        "edit-readonlyLabel": "",
+                        "edit-saveButtonLabel": "",
+                        "enableOffline": "",
+                        "id": "E33AF2109B4D4AC7A42C538905CE423D",
+                        "label": "Manage API Key",
+                        "list-customFooter": "",
+                        "list-customHeader": "",
+                        "list-deleteButtonLabel": "",
+                        "list-editLinkLabel": "",
+                        "list-newButtonLabel": "",
+                        "selectionType": "multiple",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
                     "className": "org.joget.plugin.enterprise.SqlChartMenu",
                     "properties": {
                         "binder": {
