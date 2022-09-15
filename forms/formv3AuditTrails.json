@@ -27,7 +27,7 @@
                             "className": "",
                             "properties": {}
                         },
-                        "value": "#currentUser.username#",
+                        "value": "#currentUser.firstName# #currentUser.lastName#",
                         "workflowVariable": ""
                     }
                 },
