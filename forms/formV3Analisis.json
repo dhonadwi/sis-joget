@@ -59,8 +59,8 @@
                                 "type": ""
                             }
                         },
-                        "value": "",
-                        "workflowVariable": ""
+                        "value": "survey",
+                        "workflowVariable": "surveyor"
                     }
                 },
                 {
