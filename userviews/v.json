@@ -372,6 +372,27 @@
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.ProcessStatusMenu",
+                    "properties": {
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "",
+                        "enableOffline": "",
+                        "eventClick": "",
+                        "id": "44A0C450E66B4396A29E8330E94D451E",
+                        "label": "Process Status",
+                        "layout": "path",
+                        "recordId": "#requestParam.id#",
+                        "showFutureActivities": "true",
+                        "showProcessName": "true",
+                        "showSkippedActivities": "",
+                        "usernameFormat": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "viewPermission": "requester"
+                    }
                 }
             ],
             "properties": {
