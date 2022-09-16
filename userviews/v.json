@@ -589,12 +589,12 @@
         "welcomeMessage": "#date.EEE, d MMM yyyy#"
     },
     "setting": {"properties": {
+        "__": "",
         "hideThisUserviewInAppCenter": "",
         "permission": {
             "className": "",
             "properties": {}
         },
-        "tempDisablePermissionChecking": "",
         "theme": {
             "className": "org.joget.plugin.enterprise.XadminTheme",
             "properties": {

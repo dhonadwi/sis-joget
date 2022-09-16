@@ -145,12 +145,12 @@
         "welcomeMessage": "#date.EEE, d MMM yyyy#"
     },
     "setting": {"properties": {
+        "__": "",
         "hideThisUserviewInAppCenter": "true",
         "permission": {
             "className": "",
             "properties": {}
         },
-        "tempDisablePermissionChecking": "",
         "theme": {
             "className": "org.joget.plugin.enterprise.ProgressiveTheme",
             "properties": {

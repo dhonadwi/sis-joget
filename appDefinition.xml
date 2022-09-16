@@ -1,4 +1,5 @@
 <appDefinition>
+   <appId>sis</appId>
    <id>sis</id>
    <version></version>
    <name>Sistem Informasi Survey</name>
@@ -255,21 +256,21 @@
                </packageParticipant>
             </entry>
             <entry>
-               <string>submitRegisterV2::applicantV2</string>
-               <packageParticipant>
-                  <processDefId>submitRegisterV2</processDefId>
-                  <participantId>applicantV2</participantId>
-                  <type>requester</type>
-                  <value>runProcess</value>
-               </packageParticipant>
-            </entry>
-            <entry>
                <string>registerSurveyV3::surveyor</string>
                <packageParticipant>
                   <processDefId>registerSurveyV3</processDefId>
                   <participantId>surveyor</participantId>
                   <type>workflowVariable</type>
                   <value>surveyor,user</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>submitRegisterV2::applicantV2</string>
+               <packageParticipant>
+                  <processDefId>submitRegisterV2</processDefId>
+                  <participantId>applicantV2</participantId>
+                  <type>requester</type>
+                  <value>runProcess</value>
                </packageParticipant>
             </entry>
             <entry>
