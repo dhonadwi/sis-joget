@@ -145,7 +145,7 @@
         "welcomeMessage": "#date.EEE, d MMM yyyy#"
     },
     "setting": {"properties": {
-        "hideThisUserviewInAppCenter": "",
+        "hideThisUserviewInAppCenter": "true",
         "permission": {
             "className": "",
             "properties": {}
