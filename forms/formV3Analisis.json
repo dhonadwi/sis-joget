@@ -28,6 +28,42 @@
                     }
                 },
                 {
+                    "className": "org.joget.apps.form.lib.CheckBox",
+                    "properties": {
+                        "controlField": "",
+                        "id": "field7",
+                        "label": "Check Box",
+                        "options": [
+                            {
+                                "grouping": "",
+                                "label": "Survey",
+                                "value": "survey"
+                            },
+                            {
+                                "grouping": "",
+                                "label": "Non Survey",
+                                "value": "nonsurvey"
+                            }
+                        ],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": ""
+                            }
+                        },
+                        "value": "",
+                        "workflowVariable": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
