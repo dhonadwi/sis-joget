@@ -28,11 +28,11 @@
                     }
                 },
                 {
-                    "className": "org.joget.apps.form.lib.CheckBox",
+                    "className": "org.joget.apps.form.lib.Radio",
                     "properties": {
                         "controlField": "",
                         "id": "field7",
-                        "label": "Check Box",
+                        "label": "Radio",
                         "options": [
                             {
                                 "grouping": "",
