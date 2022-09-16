@@ -391,7 +391,7 @@
                         "usernameFormat": "",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": "",
-                        "viewPermission": "requester"
+                        "viewPermission": "requester;performers;admin"
                     }
                 }
             ],
