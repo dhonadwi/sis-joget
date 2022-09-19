@@ -181,11 +181,13 @@
                     </ExtendedAttributes>
                 </Transition>
                 <Transition From="routeSurveyOrNonSurvey" Id="transition5" To="InputApproval">
+                    <Condition Type="OTHERWISE"/>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
                 <Transition From="routeSurveyOrNonSurvey" Id="transition6" To="inputLaporanSurvey">
+                    <Condition Type="CONDITION">survey == 'survey'</Condition>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
