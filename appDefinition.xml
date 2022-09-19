@@ -31,6 +31,17 @@
                </packageActivityForm>
             </entry>
             <entry>
+               <string>registerSurveyV3::submitRegisterSurveyV3</string>
+               <packageActivityForm>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <activityDefId>submitRegisterSurveyV3</activityDefId>
+                  <formId>formV3SubmitRegister</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>registerSurveyV3::InputApproval</string>
                <packageActivityForm>
                   <processDefId>registerSurveyV3</processDefId>
