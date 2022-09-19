@@ -58,6 +58,7 @@
                   <processDefId>registerSurveyV3</processDefId>
                   <activityDefId>routeApproval</activityDefId>
                   <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
+                  <pluginProperties>{&quot;rules&quot;:{&quot;ifrules&quot;:[{&quot;revert&quot;:false,&quot;andOr&quot;:&quot;and&quot;,&quot;conditions&quot;:[{&quot;revert&quot;:false,&quot;variable&quot;:&quot;status&quot;,&quot;operation&quot;:&quot;==&quot;,&quot;value&quot;:&quot;approved&quot;}],&quot;actions&quot;:[{&quot;type&quot;:&quot;transition&quot;,&quot;name&quot;:&quot;transition10&quot;,&quot;value&quot;:&quot;&quot;}]}],&quot;else&quot;:[{&quot;type&quot;:&quot;transition&quot;,&quot;name&quot;:&quot;transition11&quot;,&quot;value&quot;:&quot;&quot;}]}}</pluginProperties>
                </packageActivityPlugin>
             </entry>
          </packageActivityPluginMap>
