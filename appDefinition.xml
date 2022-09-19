@@ -7,19 +7,7 @@
          <appId>sis</appId>
          <id>sis</id>
          <name>Sistem Informasi Survey</name>
-         <packageActivityFormMap>
-            <entry>
-               <string>registerSurveyV3::submitRegisterSurveyV3</string>
-               <packageActivityForm>
-                  <processDefId>registerSurveyV3</processDefId>
-                  <activityDefId>submitRegisterSurveyV3</activityDefId>
-                  <formId>formV3SubmitRegister</formId>
-                  <type>SINGLE</type>
-                  <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>false</disableSaveAsDraft>
-               </packageActivityForm>
-            </entry>
-         </packageActivityFormMap>
+         <packageActivityFormMap/>
          <packageActivityPluginMap/>
          <packageParticipantMap>
             <entry>
