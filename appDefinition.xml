@@ -42,7 +42,16 @@
                </packageActivityForm>
             </entry>
          </packageActivityFormMap>
-         <packageActivityPluginMap/>
+         <packageActivityPluginMap>
+            <entry>
+               <string>registerSurveyV3::routeSurveyOrNonSurvey</string>
+               <packageActivityPlugin>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <activityDefId>routeSurveyOrNonSurvey</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
+               </packageActivityPlugin>
+            </entry>
+         </packageActivityPluginMap>
          <packageParticipantMap>
             <entry>
                <string>registerSurveyV3::adminRegisterSurveyV3</string>
