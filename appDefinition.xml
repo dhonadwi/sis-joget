@@ -86,7 +86,8 @@
                <packageParticipant>
                   <processDefId>registerSurveyV3</processDefId>
                   <participantId>analisRegisterSurveyV3</participantId>
-                  <type>requesterHod</type>
+                  <type>user</type>
+                  <value>clark,admin</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
