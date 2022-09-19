@@ -9,7 +9,17 @@
          <name>Sistem Informasi Survey</name>
          <packageActivityFormMap/>
          <packageActivityPluginMap/>
-         <packageParticipantMap/>
+         <packageParticipantMap>
+            <entry>
+               <string>registerSurveyV3::adminRegisterSurveyV3</string>
+               <packageParticipant>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <participantId>adminRegisterSurveyV3</participantId>
+                  <type>requester</type>
+                  <value>runProcess</value>
+               </packageParticipant>
+            </entry>
+         </packageParticipantMap>
       </packageDefinition>
    </packageDefinitionList>
    <formDefinitionList/>
