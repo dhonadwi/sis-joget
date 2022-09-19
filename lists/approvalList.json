@@ -99,7 +99,7 @@
                             "value": "Batal"
                         },
                         {
-                            "backgroundColor": "GREEN",
+                            "backgroundColor": "BLUE",
                             "label": "Cair",
                             "value": "Cair"
                         }
