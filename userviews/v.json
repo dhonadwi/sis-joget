@@ -14,7 +14,7 @@
                     "defaultPortletWidth": "1",
                     "enableOffline": "",
                     "id": "C09CE06311DF470785B9F335B7E88851",
-                    "label": "Dashboard",
+                    "label": "<i class=\"fa fa-tachometer\"><\/i> Dashboard",
                     "mode": "",
                     "resizable": "true",
                     "userviewCacheDuration": "20",
