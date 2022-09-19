@@ -20,6 +20,15 @@
                </packageParticipant>
             </entry>
             <entry>
+               <string>registerSurveyV3::surveyor</string>
+               <packageParticipant>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <participantId>surveyor</participantId>
+                  <type>workflowVariable</type>
+                  <value>surveyor,user</value>
+               </packageParticipant>
+            </entry>
+            <entry>
                <string>registerSurveyV3::analisRegisterSurveyV3</string>
                <packageParticipant>
                   <processDefId>registerSurveyV3</processDefId>
