@@ -76,6 +76,26 @@
                     }
                 },
                 {
+                    "className": "org.joget.apps.userview.lib.InboxMenu",
+                    "properties": {
+                        "appFilter": "all",
+                        "assignment-customFooter": "",
+                        "assignment-customHeader": "",
+                        "buttonPosition": "bottomLeft",
+                        "cacheAllLinks": "",
+                        "customId": "inbox_v2",
+                        "enableOffline": "",
+                        "id": "95838E61A0514346AEA90D61E170BCE3",
+                        "label": "Inbox v2",
+                        "list-customFooter": "",
+                        "list-customHeader": "",
+                        "rowCount": "true",
+                        "showPopup": "",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
                     "className": "org.joget.apps.userview.lib.DataListMenu",
                     "properties": {
                         "buttonPosition": "bottomLeft",
@@ -453,26 +473,6 @@
                         "runProcessSubmitLabel": "",
                         "showInPopupDialog": "",
                         "userviewCacheDuration": "",
-                        "userviewCacheScope": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.userview.lib.InboxMenu",
-                    "properties": {
-                        "appFilter": "all",
-                        "assignment-customFooter": "",
-                        "assignment-customHeader": "",
-                        "buttonPosition": "bottomLeft",
-                        "cacheAllLinks": "",
-                        "customId": "inbox_v2",
-                        "enableOffline": "",
-                        "id": "95838E61A0514346AEA90D61E170BCE3",
-                        "label": "Inbox v2",
-                        "list-customFooter": "",
-                        "list-customHeader": "",
-                        "rowCount": "true",
-                        "showPopup": "",
-                        "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
                 },
