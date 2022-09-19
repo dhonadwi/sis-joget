@@ -31,8 +31,8 @@
                     "className": "org.joget.apps.form.lib.Radio",
                     "properties": {
                         "controlField": "",
-                        "id": "field7",
-                        "label": "Radio",
+                        "id": "survey",
+                        "label": "Pilih Survey",
                         "options": [
                             {
                                 "grouping": "",
@@ -60,49 +60,6 @@
                             }
                         },
                         "value": "survey",
-                        "workflowVariable": "surveyor"
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.SelectBox",
-                    "properties": {
-                        "controlField": "",
-                        "id": "survey",
-                        "label": "Pilih Survey",
-                        "multiple": "",
-                        "options": [
-                            {
-                                "grouping": "",
-                                "label": "",
-                                "value": ""
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Survey",
-                                "value": "survey"
-                            },
-                            {
-                                "grouping": "",
-                                "label": "Non Survey",
-                                "value": "nonsurvey"
-                            }
-                        ],
-                        "optionsBinder": {
-                            "className": "",
-                            "properties": {}
-                        },
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "size": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "",
-                                "type": ""
-                            }
-                        },
-                        "value": "",
                         "workflowVariable": "survey"
                     }
                 },
