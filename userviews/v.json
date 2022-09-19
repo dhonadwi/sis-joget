@@ -40,7 +40,7 @@
                         "fieldPassoverMethod": "append",
                         "id": "1CE84536A4734D31962AA2BB47E7A4AD",
                         "keyName": "",
-                        "label": "Submit Register",
+                        "label": "<i class=\"fa-solid fa-id-card\"><\/i> Submit Register",
                         "messageShowAfterComplete": "",
                         "processDefId": "registerSurveyV3",
                         "redirectTarget": "",
