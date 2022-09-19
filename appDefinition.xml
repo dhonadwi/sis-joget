@@ -19,6 +19,15 @@
                   <value>runProcess</value>
                </packageParticipant>
             </entry>
+            <entry>
+               <string>registerSurveyV3::analisRegisterSurveyV3</string>
+               <packageParticipant>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <participantId>analisRegisterSurveyV3</participantId>
+                  <type>requesterHod</type>
+                  <value></value>
+               </packageParticipant>
+            </entry>
          </packageParticipantMap>
       </packageDefinition>
    </packageDefinitionList>
