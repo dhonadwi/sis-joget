@@ -34,7 +34,6 @@
                   <processDefId>registerSurveyV3</processDefId>
                   <participantId>analisRegisterSurveyV3</participantId>
                   <type>requesterHod</type>
-                  <value></value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
