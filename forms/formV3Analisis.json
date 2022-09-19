@@ -70,7 +70,11 @@
                         "id": "surveyor",
                         "label": "Nama Surveyor",
                         "multiple": "",
-                        "options": [],
+                        "options": [{
+                            "grouping": "",
+                            "label": "Non Survey",
+                            "value": "nonsurvey"
+                        }],
                         "optionsBinder": {
                             "className": "org.joget.plugin.enterprise.UserOptionsBinder",
                             "properties": {
