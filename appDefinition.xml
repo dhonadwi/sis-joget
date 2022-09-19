@@ -20,6 +20,17 @@
                </packageActivityForm>
             </entry>
             <entry>
+               <string>registerSurveyV3::analisRegisterSurveyV3</string>
+               <packageActivityForm>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <activityDefId>analisRegisterSurveyV3</activityDefId>
+                  <formId>formV3Analisis</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>registerSurveyV3::hasilApproval</string>
                <packageActivityForm>
                   <processDefId>registerSurveyV3</processDefId>
