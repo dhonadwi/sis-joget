@@ -40,7 +40,7 @@
                         "fieldPassoverMethod": "append",
                         "id": "1CE84536A4734D31962AA2BB47E7A4AD",
                         "keyName": "",
-                        "label": "<i class=\"fa-solid fa-id-card\"><\/i> Submit Register",
+                        "label": "Submit Register",
                         "messageShowAfterComplete": "",
                         "processDefId": "registerSurveyV3",
                         "redirectTarget": "",
@@ -65,7 +65,7 @@
                         "enableOffline": "",
                         "id": "0883ea80-2c64-4f76-8587-40881ad4c88d",
                         "keyName": "",
-                        "label": "Inbox",
+                        "label": "<i class=\"fas fa-inbox\"><\/i> Inbox",
                         "list-customFooter": "",
                         "list-customHeader": "",
                         "rowCount": "true",
@@ -99,7 +99,7 @@
             ],
             "properties": {
                 "id": "category-EC07621020CE44879BE89349A2D3F4CD",
-                "label": "<i class=\"fa-solid fa-list\"><\/i> Register"
+                "label": "<i class=\"fas fa-server\"><\/i> Register"
             }
         },
         {
@@ -397,7 +397,7 @@
             ],
             "properties": {
                 "id": "category-798ea7ec-f985-4ec4-95f0-fe2f9189a660",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Info"
+                "label": "<i class=\"fas fa-info-circle\"><\/i> Info"
             }
         },
         {
