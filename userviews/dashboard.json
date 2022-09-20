@@ -170,9 +170,10 @@
         "__": "",
         "hideThisUserviewInAppCenter": "true",
         "permission": {
-            "className": "",
+            "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
             "properties": {}
         },
+        "tempDisablePermissionChecking": "",
         "theme": {
             "className": "org.joget.plugin.enterprise.ProgressiveTheme",
             "properties": {
