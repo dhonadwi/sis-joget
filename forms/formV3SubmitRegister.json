@@ -238,15 +238,6 @@
                             },
                             "subFormParentId": "audit_id"
                         }
-                    },
-                    {
-                        "className": "org.joget.apps.form.lib.CustomHTML",
-                        "properties": {
-                            "autoPopulate": "",
-                            "id": "field12",
-                            "label": "",
-                            "value": "<script>\n    $(document).ready(function() {\n        $('[name=keanggotaan]').on('change', function() {\n        if(this.checked){\n            $('[name=ktp]').show()\n        } else {\n            $('[name=ktp]').hide()\n        }\n    });\n    })\n<\/script>"
-                        }
                     }
                 ],
                 "properties": {"width": "100%"}
@@ -341,39 +332,50 @@
             "className": "org.joget.apps.form.model.Section",
             "elements": [{
                 "className": "org.joget.apps.form.model.Column",
-                "elements": [{
-                    "className": "org.joget.apps.form.lib.SelectBox",
-                    "properties": {
-                        "controlField": "",
-                        "id": "ktp",
-                        "label": "Pilih No. KTP",
-                        "multiple": "",
-                        "options": [],
-                        "optionsBinder": {
-                            "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
-                            "properties": {
-                                "addEmpty": "",
-                                "cacheInterval": "",
-                                "jdbcDatasource": "default",
-                                "sql": "SELECT c_ktp, c_ktp from app_fd_sis_register ORDER BY c_ktp asc;",
-                                "useAjax": ""
-                            }
-                        },
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "size": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "",
-                                "type": ""
-                            }
-                        },
-                        "value": "",
-                        "workflowVariable": ""
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.SelectBox",
+                        "properties": {
+                            "controlField": "",
+                            "id": "ktp",
+                            "label": "Pilih No. KTP",
+                            "multiple": "",
+                            "options": [],
+                            "optionsBinder": {
+                                "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                                "properties": {
+                                    "addEmpty": "",
+                                    "cacheInterval": "",
+                                    "jdbcDatasource": "default",
+                                    "sql": "SELECT c_ktp, c_ktp from app_fd_sis_register ORDER BY c_ktp asc;",
+                                    "useAjax": ""
+                                }
+                            },
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field12",
+                            "label": "",
+                            "value": "<script>\n    $(document).ready(function() {\n        $('[name=keanggotaan]').on('change', function() {\n        if(this.checked){\n            $('[name=sectionKtpSelect]').hide()\n            $('[name=sectionKtpInput]').show()\n        } else {\n            $('[name=sectionKtpSelect]').hide()\n            $('[name=sectionKtpInput]').show()\n        }\n    });\n    })\n<\/script>"
+                        }
                     }
-                }],
+                ],
                 "properties": {"width": "100%"}
             }],
             "properties": {
