@@ -169,7 +169,24 @@
             "view": "Tablet"
         }
     ],
-    "rowActions": [],
+    "rowActions": [{
+        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+        "icon": "<i class=\"fas fa-link\"><\/i>",
+        "id": "rowAction_0",
+        "label": "Hyperlink",
+        "name": "Data List Hyperlink Action",
+        "properties": {
+            "confirmation": "",
+            "datalist_type": "row_action",
+            "href": "ps",
+            "hrefColumn": "",
+            "hrefParam": "",
+            "label": "View Process Status",
+            "rules": [],
+            "target": "_self"
+        },
+        "type": "text"
+    }],
     "searchPopup": "",
     "showDataWhenFilterSet": "",
     "showPageSizeSelector": "true",
