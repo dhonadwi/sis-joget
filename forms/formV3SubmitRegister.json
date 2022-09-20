@@ -23,12 +23,8 @@
                         "readonly": "",
                         "readonlyLabel": "",
                         "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "",
-                                "type": ""
-                            }
+                            "className": "",
+                            "properties": {}
                         },
                         "value": "baru",
                         "workflowVariable": ""
