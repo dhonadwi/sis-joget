@@ -41,11 +41,14 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "className": "org.joget.apps.form.lib.DuplicateValueValidator",
                             "properties": {
+                                "errorDuplicateMsg": "Nasabah sudah pernah pengajuan",
+                                "errorFormatMsg": "",
+                                "fieldId": "ktp",
+                                "formDefId": "formV3SubmitRegister",
                                 "mandatory": "true",
-                                "message": "",
-                                "type": "numeric"
+                                "regex": ""
                             }
                         },
                         "value": "",
