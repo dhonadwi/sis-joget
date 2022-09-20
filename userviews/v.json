@@ -393,6 +393,19 @@
                         "userviewCacheScope": "",
                         "viewPermission": "requester;performers;admin"
                     }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.Link",
+                    "properties": {
+                        "customId": "",
+                        "enableOffline": "",
+                        "id": "171F6CA276F246309569BD4518C2549E",
+                        "label": "Link",
+                        "target": "self",
+                        "url": "/jw/web/userview/sis/dashboard",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
                 }
             ],
             "properties": {
