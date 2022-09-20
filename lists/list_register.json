@@ -179,8 +179,8 @@
             "confirmation": "",
             "datalist_type": "row_action",
             "href": "ps",
-            "hrefColumn": "",
-            "hrefParam": "",
+            "hrefColumn": "id",
+            "hrefParam": "id",
             "label": "View Process Status",
             "rules": [],
             "target": "_self"
