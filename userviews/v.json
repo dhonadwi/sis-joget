@@ -400,7 +400,7 @@
                         "customId": "",
                         "enableOffline": "",
                         "id": "171F6CA276F246309569BD4518C2549E",
-                        "label": "Link",
+                        "label": "Link Dashboard",
                         "target": "self",
                         "url": "/jw/web/userview/sis/dashboard",
                         "userviewCacheDuration": "20",
