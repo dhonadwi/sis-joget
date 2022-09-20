@@ -98,7 +98,7 @@
                                 "addEmpty": "",
                                 "cacheInterval": "",
                                 "jdbcDatasource": "default",
-                                "sql": "SELECT c_ktp from app_fd_sis_register ORDER BY c_ktp asc;",
+                                "sql": "SELECT c_ktp, c_ktp from app_fd_sis_register ORDER BY c_ktp asc;",
                                 "useAjax": ""
                             }
                         },
