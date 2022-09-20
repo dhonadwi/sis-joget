@@ -126,7 +126,7 @@
                     "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
                         "controlField": "",
-                        "id": "ktp",
+                        "id": "ktp_ro",
                         "label": "Pilih No. KTP",
                         "multiple": "",
                         "options": [],
@@ -144,8 +144,12 @@
                         "readonlyLabel": "",
                         "size": "",
                         "validator": {
-                            "className": "",
-                            "properties": {}
+                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "properties": {
+                                "mandatory": "true",
+                                "message": "",
+                                "type": ""
+                            }
                         },
                         "value": "",
                         "workflowVariable": ""
