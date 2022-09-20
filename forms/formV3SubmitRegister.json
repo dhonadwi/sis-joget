@@ -272,7 +272,7 @@
                         "autoPopulate": "",
                         "id": "field12",
                         "label": "",
-                        "value": "<script>\n    $(document).ready(function() {\n        // console.log('halo');\n        $('[name=keanggotaan]').on('change', function() {\n        console.log(this.checked);\n    });\n    })\n<\/script>"
+                        "value": "<script>\n    $(document).ready(function() {\n        $('[name=keanggotaan]').on('change', function() {\n        if(this.checked){\n            $('[name=ktp]').show()\n        } else {\n            $('[name=ktp]').hide()\n        }\n    });\n    })\n<\/script>"
                     }
                 }
             ],
