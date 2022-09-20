@@ -135,7 +135,7 @@
                     "customId": "",
                     "enableOffline": "",
                     "id": "91DA9C7EC5D14BD3A4576C0A873A34F8",
-                    "label": "Link",
+                    "label": "Link UserView",
                     "target": "self",
                     "url": "/jw/web/userview/sis/v",
                     "userviewCacheDuration": "20",
