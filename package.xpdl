@@ -25,7 +25,9 @@
     </Applications>
     <WorkflowProcesses>
         <WorkflowProcess Id="registerSurveyV3" Name="Register Survey V3">
-            <ProcessHeader DurationUnit="h"/>
+            <ProcessHeader DurationUnit="m">
+                <Limit>10</Limit>
+            </ProcessHeader>
             <DataFields>
                 <DataField Id="status" IsArray="FALSE">
                     <DataType>
