@@ -97,7 +97,7 @@
                <packageActivityPlugin>
                   <processDefId>registerSurveyV3</processDefId>
                   <activityDefId>toolEscalate</activityDefId>
-                  <pluginName>org.joget.plugin.enterprise.FormDataUpdateTool</pluginName>
+                  <pluginName>org.joget.tutorial.WorkflowVariableUpdateTool</pluginName>
                </packageActivityPlugin>
             </entry>
             <entry>
