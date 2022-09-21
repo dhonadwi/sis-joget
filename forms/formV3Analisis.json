@@ -101,7 +101,7 @@
                     "properties": {
                         "encryption": "",
                         "id": "field7",
-                        "label": "Variabel Survey",
+                        "label": "Variabel Analis",
                         "maxlength": "",
                         "placeholder": "",
                         "readonly": "",
@@ -114,6 +114,27 @@
                             "properties": {}
                         },
                         "value": "#variable.analis#",
+                        "workflowVariable": ""
+                    }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "field7",
+                        "label": "Variabel Plafond",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "#variable.plafond#",
                         "workflowVariable": ""
                     }
                 },
