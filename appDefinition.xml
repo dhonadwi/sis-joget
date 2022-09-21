@@ -75,6 +75,14 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>registerSurveyV3::routeAnalis</string>
+               <packageActivityPlugin>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <activityDefId>routeAnalis</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>registerSurveyV3::routeApproval</string>
                <packageActivityPlugin>
                   <processDefId>registerSurveyV3</processDefId>
