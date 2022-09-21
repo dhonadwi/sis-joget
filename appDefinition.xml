@@ -75,6 +75,14 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>registerSurveyV3::toolAnalisClark</string>
+               <packageActivityPlugin>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <activityDefId>toolAnalisClark</activityDefId>
+                  <pluginName>org.joget.tutorial.WorkflowVariableUpdateTool</pluginName>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>registerSurveyV3::routeAnalis</string>
                <packageActivityPlugin>
                   <processDefId>registerSurveyV3</processDefId>
