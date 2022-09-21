@@ -80,6 +80,7 @@
                   <processDefId>registerSurveyV3</processDefId>
                   <activityDefId>routeAnalis</activityDefId>
                   <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
+                  <pluginProperties>{&quot;rules&quot;:{&quot;ifrules&quot;:[{&quot;revert&quot;:false,&quot;andOr&quot;:&quot;and&quot;,&quot;conditions&quot;:[{&quot;revert&quot;:false,&quot;variable&quot;:&quot;plafond&quot;,&quot;operation&quot;:&quot;&gt;&quot;,&quot;value&quot;:&quot;5000000&quot;}],&quot;actions&quot;:[{&quot;type&quot;:&quot;variable&quot;,&quot;name&quot;:&quot;analis&quot;,&quot;value&quot;:&quot;admin&quot;}]}],&quot;else&quot;:[{&quot;type&quot;:&quot;variable&quot;,&quot;name&quot;:&quot;analis&quot;,&quot;value&quot;:&quot;clark&quot;}]}}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
