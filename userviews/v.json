@@ -106,6 +106,15 @@
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
                 {
+                    "className": "org.joget.plugin.enterprise.SlaReportMenu",
+                    "properties": {
+                        "id": "7525E0514D034AB4A165ECF9D961D5F6",
+                        "label": "SLA Report",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
                     "className": "org.joget.api.lib.ApiKeyMenu",
                     "properties": {
                         "add-cancelButtonLabel": "",
