@@ -108,8 +108,15 @@
                 {
                     "className": "org.joget.plugin.enterprise.SlaReportMenu",
                     "properties": {
+                        "cacheAllLinks": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "",
+                        "enableOffline": "",
+                        "hasSlaOnly": "",
                         "id": "7525E0514D034AB4A165ECF9D961D5F6",
                         "label": "SLA Report",
+                        "processDefId": "registerSurveyV3",
                         "userviewCacheDuration": "20",
                         "userviewCacheScope": ""
                     }
