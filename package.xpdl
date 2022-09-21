@@ -59,6 +59,20 @@
                         <No/>
                     </Implementation>
                     <Performer>analisRegisterSurveyV3</Performer>
+                    <Deadline Execution="ASYNCHR">
+                        <DeadlineCondition>var m=new java.util.Date(); m.setTime(ACTIVITY_ACTIVATED_TIME.getTime()+(1*60000)); m;</DeadlineCondition>
+                        <ExceptionName>NOTIFY</ExceptionName>
+                    </Deadline>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="AND">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition8"/>
+                                    <TransitionRef Id="transition15"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="analisRegisterSurveyV3"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="107,44"/>
@@ -173,6 +187,16 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="845,43"/>
                     </ExtendedAttributes>
                 </Activity>
+                <Activity Id="toolSendReminder" Name="Send Reminder">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>systemRegisterSurveyV3</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="systemRegisterSurveyV3"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="108.9914779663086,8.125005730468729"/>
+                    </ExtendedAttributes>
+                </Activity>
             </Activities>
             <Transitions>
                 <Transition From="submitRegisterSurveyV3" Id="transition2" To="analisRegisterSurveyV3">
@@ -237,11 +261,18 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
+                <Transition From="analisRegisterSurveyV3" Id="transition15" To="toolSendReminder">
+                    <Condition Type="EXCEPTION">NOTIFY</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
             </Transitions>
             <ExtendedAttributes>
                 <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="adminRegisterSurveyV3;analisRegisterSurveyV3;surveyor;systemRegisterSurveyV3"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=adminRegisterSurveyV3,CONNECTING_ACTIVITY_ID=hasilApproval,X_OFFSET=1092,Y_OFFSET=21,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=adminRegisterSurveyV3,CONNECTING_ACTIVITY_ID=submitRegisterSurveyV3,X_OFFSET=88,Y_OFFSET=81,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=systemRegisterSurveyV3,CONNECTING_ACTIVITY_ID=toolSendReminder,X_OFFSET=142,Y_OFFSET=122,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
     </WorkflowProcesses>
