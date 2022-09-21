@@ -93,6 +93,14 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>registerSurveyV3::toolEscalate</string>
+               <packageActivityPlugin>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <activityDefId>toolEscalate</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.SimpleTensorFlowAITool</pluginName>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>registerSurveyV3::toolSendReminder</string>
                <packageActivityPlugin>
                   <processDefId>registerSurveyV3</processDefId>
