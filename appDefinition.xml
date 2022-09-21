@@ -89,6 +89,7 @@
                   <processDefId>registerSurveyV3</processDefId>
                   <activityDefId>toolAnalisAdmin</activityDefId>
                   <pluginName>org.joget.tutorial.WorkflowVariableUpdateTool</pluginName>
+                  <pluginProperties>{&quot;workflowVarMapping&quot;:[{&quot;variable&quot;:&quot;analis&quot;,&quot;changeValueTo&quot;:&quot;admin&quot;}]}</pluginProperties>
                </packageActivityPlugin>
             </entry>
             <entry>
