@@ -85,7 +85,7 @@
                                 <TransitionRefs>
                                     <TransitionRef Id="transition8"/>
                                     <TransitionRef Id="transition15"/>
-                                    <TransitionRef Id="transition16"/>
+                                    <TransitionRef Id="transition25"/>
                                 </TransitionRefs>
                             </Split>
                         </TransitionRestriction>
@@ -211,17 +211,7 @@
                     <Performer>systemRegisterSurveyV3</Performer>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="systemRegisterSurveyV3"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="413.94886016845703,53.05396080859373"/>
-                    </ExtendedAttributes>
-                </Activity>
-                <Activity Id="toolEscalate" Name="Proses Non Survey">
-                    <Implementation>
-                        <Tool Id="default_application"/>
-                    </Implementation>
-                    <Performer>systemRegisterSurveyV3</Performer>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="systemRegisterSurveyV3"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="685.9375076293945,104.14771080859373"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="431.9318313598633,73.02557946093748"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="toolCekPlafond" Name="Cek Plafond">
@@ -239,6 +229,11 @@
                         <Tool Id="default_application"/>
                     </Implementation>
                     <Performer>systemRegisterSurveyV3</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="systemRegisterSurveyV3"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="196.96021270751953,148.28125573046873"/>
@@ -249,9 +244,14 @@
                         <Tool Id="default_application"/>
                     </Implementation>
                     <Performer>systemRegisterSurveyV3</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="systemRegisterSurveyV3"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="310.9658889770508,147.44318199999998"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="326.96021270751953,149.43182946093748"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="routePlafond" Name="Plafond?">
@@ -283,6 +283,24 @@
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="analisRegisterSurveyV3"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="350.98011016845703,102.21590233691407"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="routeEscalate" Name="Ganti Analis">
+                    <Route/>
+                    <Performer>systemRegisterSurveyV3</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition26"/>
+                                    <TransitionRef Id="transition27"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="systemRegisterSurveyV3"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="526.9744338989258,5.582403191406229"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -351,19 +369,6 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="analisRegisterSurveyV3" Id="transition16" To="toolEscalate">
-                    <Condition Type="EXCEPTION">ESCALATE</Condition>
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
-                <Transition From="toolEscalate" Id="transition17" To="InputApproval">
-                    <ExtendedAttributes>
-                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
-                    </ExtendedAttributes>
-                </Transition>
                 <Transition From="submitRegisterSurveyV3" Id="transition18" To="toolCekPlafond">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
@@ -401,12 +406,33 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
+                <Transition From="analisRegisterSurveyV3" Id="transition25" To="routeEscalate">
+                    <Condition Type="EXCEPTION">ESCALATE</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="routeEscalate" Id="transition26" To="toolAnalisClark">
+                    <Condition Type="CONDITION">analis == 'admin'</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="routeEscalate" Id="transition27" To="toolAnalisAdmin">
+                    <Condition Type="OTHERWISE"/>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_BREAK_POINTS" Value="orthogonal"/>
+                    </ExtendedAttributes>
+                </Transition>
             </Transitions>
             <ExtendedAttributes>
                 <ExtendedAttribute Name="JaWE_GRAPH_WORKFLOW_PARTICIPANT_ORDER" Value="adminRegisterSurveyV3;analisRegisterSurveyV3;surveyor;systemRegisterSurveyV3"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=adminRegisterSurveyV3,CONNECTING_ACTIVITY_ID=hasilApproval,X_OFFSET=1332,Y_OFFSET=26,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
                 <ExtendedAttribute Name="JaWE_GRAPH_START_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=adminRegisterSurveyV3,CONNECTING_ACTIVITY_ID=submitRegisterSurveyV3,X_OFFSET=63,Y_OFFSET=76,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=START_DEFAULT"/>
-                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=systemRegisterSurveyV3,CONNECTING_ACTIVITY_ID=toolSendReminder,X_OFFSET=463,Y_OFFSET=209,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
+                <ExtendedAttribute Name="JaWE_GRAPH_END_OF_WORKFLOW" Value="JaWE_GRAPH_PARTICIPANT_ID=systemRegisterSurveyV3,CONNECTING_ACTIVITY_ID=toolSendReminder,X_OFFSET=633,Y_OFFSET=84,JaWE_GRAPH_TRANSITION_STYLE=NO_ROUTING_ORTHOGONAL,TYPE=END_DEFAULT"/>
             </ExtendedAttributes>
         </WorkflowProcess>
     </WorkflowProcesses>
