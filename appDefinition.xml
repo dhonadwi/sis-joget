@@ -97,7 +97,7 @@
                <packageActivityPlugin>
                   <processDefId>registerSurveyV3</processDefId>
                   <activityDefId>toolEscalate</activityDefId>
-                  <pluginName>org.joget.apps.app.lib.SimpleTensorFlowAITool</pluginName>
+                  <pluginName>org.joget.plugin.enterprise.FormDataUpdateTool</pluginName>
                </packageActivityPlugin>
             </entry>
             <entry>
