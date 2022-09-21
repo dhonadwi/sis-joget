@@ -152,8 +152,8 @@
                <packageParticipant>
                   <processDefId>registerSurveyV3</processDefId>
                   <participantId>analisRegisterSurveyV3</participantId>
-                  <type>user</type>
-                  <value>clark,admin</value>
+                  <type>workflowVariable</type>
+                  <value>analis,user</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
