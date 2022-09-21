@@ -1,140 +1,162 @@
 {
-    "categories": [{
-        "className": "org.joget.apps.userview.model.UserviewCategory",
-        "menus": [
-            {
-                "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+    "categories": [
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [
+                {
+                    "className": "org.joget.plugin.enterprise.DataListInboxMenu",
+                    "properties": {
+                        "appFilter": "all",
+                        "assignment-customFooter": "",
+                        "assignment-customHeader": "",
+                        "cacheAllLinks": "",
+                        "cacheListAction": "",
+                        "customId": "register_inbox",
+                        "datalistId": "list_register",
+                        "enableOffline": "",
+                        "id": "0883ea80-2c64-4f76-8587-40881ad4c88d",
+                        "keyName": "",
+                        "label": "Inbox",
+                        "list-customFooter": "",
+                        "list-customHeader": "",
+                        "rowCount": "true",
+                        "showDetail": "",
+                        "showPopup": "",
+                        "userviewCacheDuration": "",
+                        "userviewCacheScope": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                    "properties": {
+                        "binder": {
+                            "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                            "properties": {
+                                "aggregateField": [{
+                                    "field": "survey",
+                                    "function": "AFD_COUNT_"
+                                }],
+                                "customSelectionValue": "",
+                                "extraCondition": "",
+                                "filters": [],
+                                "formDefId": "formV3Analisis",
+                                "functionColumns": [],
+                                "groupBy": "survey",
+                                "having": [],
+                                "joins": []
+                            }
+                        },
+                        "categoryAxisLabel": "Survey",
+                        "chartHeight": "50%",
+                        "chartType": "bar",
+                        "chartWidth": "60%",
+                        "colors": "orange",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "",
+                        "datasource": "binder",
+                        "enableOffline": "",
+                        "horizontal": "",
+                        "id": "A03BF2B709D9460BB99A1348ABB13F7E",
+                        "keyName": "",
+                        "label": "Survey Chart",
+                        "mapping_x": "survey",
+                        "mapping_ys": [{
+                            "legend": "Survey",
+                            "y": "AFD_COUNT_survey"
+                        }],
+                        "showLegend": "true",
+                        "showValueLabel": "true",
+                        "sortingOrder": "ASC",
+                        "sortingOrderByColumn": "",
+                        "stack": "",
+                        "title": "Survey  Chart",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "valueAxisLabel": "Category of Survey",
+                        "xAxisDisplayAS": "",
+                        "yaxisPrefix": ""
+                    }
+                },
+                {
+                    "className": "org.joget.plugin.enterprise.SqlChartMenu",
+                    "properties": {
+                        "binder": {
+                            "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
+                            "properties": {
+                                "aggregateField": [{
+                                    "field": "keterangan",
+                                    "function": "AFD_COUNT_"
+                                }],
+                                "customSelectionValue": "",
+                                "extraCondition": "",
+                                "filters": [],
+                                "formDefId": "formv3HasilApprovalV2",
+                                "functionColumns": [],
+                                "groupBy": "keterangan",
+                                "having": [],
+                                "joins": []
+                            }
+                        },
+                        "categoryAxisLabel": "Category",
+                        "chartHeight": "50%",
+                        "chartType": "bar",
+                        "chartWidth": "60%",
+                        "colors": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "",
+                        "datasource": "binder",
+                        "enableOffline": "",
+                        "horizontal": "",
+                        "id": "B91479E9E8EE498DABF1A0A0D2541299",
+                        "keyName": "",
+                        "label": "Pencairan Chart",
+                        "mapping_x": "keterangan",
+                        "mapping_ys": [{
+                            "legend": "Pencairan",
+                            "y": "AFD_COUNT_keterangan"
+                        }],
+                        "showLegend": "true",
+                        "showValueLabel": "true",
+                        "sortingOrder": "ASC",
+                        "sortingOrderByColumn": "",
+                        "stack": "",
+                        "title": "Pencairan Chart",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": "",
+                        "valueAxisLabel": "Amount",
+                        "xAxisDisplayAS": "",
+                        "yaxisPrefix": ""
+                    }
+                }
+            ],
+            "properties": {
+                "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
+                "label": "<i class=\"fa fa-home\"><\/i>Register Survey"
+            }
+        },
+        {
+            "className": "org.joget.apps.userview.model.UserviewCategory",
+            "menus": [{
+                "className": "org.joget.apps.userview.lib.Link",
                 "properties": {
-                    "appFilter": "all",
-                    "assignment-customFooter": "",
-                    "assignment-customHeader": "",
-                    "cacheAllLinks": "",
-                    "cacheListAction": "",
-                    "customId": "register_inbox",
-                    "datalistId": "list_register",
+                    "customId": "",
                     "enableOffline": "",
-                    "id": "0883ea80-2c64-4f76-8587-40881ad4c88d",
-                    "keyName": "",
-                    "label": "Inbox",
-                    "list-customFooter": "",
-                    "list-customHeader": "",
-                    "rowCount": "true",
-                    "showDetail": "",
-                    "showPopup": "",
-                    "userviewCacheDuration": "",
+                    "id": "91DA9C7EC5D14BD3A4576C0A873A34F8",
+                    "label": "Link UserView",
+                    "target": "self",
+                    "url": "/jw/web/userview/sis/v",
+                    "userviewCacheDuration": "20",
                     "userviewCacheScope": ""
                 }
-            },
-            {
-                "className": "org.joget.plugin.enterprise.SqlChartMenu",
-                "properties": {
-                    "binder": {
-                        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
-                        "properties": {
-                            "aggregateField": [{
-                                "field": "survey",
-                                "function": "AFD_COUNT_"
-                            }],
-                            "customSelectionValue": "",
-                            "extraCondition": "",
-                            "filters": [],
-                            "formDefId": "formV3Analisis",
-                            "functionColumns": [],
-                            "groupBy": "survey",
-                            "having": [],
-                            "joins": []
-                        }
-                    },
-                    "categoryAxisLabel": "Survey",
-                    "chartHeight": "50%",
-                    "chartType": "bar",
-                    "chartWidth": "60%",
-                    "colors": "orange",
-                    "customFooter": "",
-                    "customHeader": "",
-                    "customId": "",
-                    "datasource": "binder",
-                    "enableOffline": "",
-                    "horizontal": "",
-                    "id": "A03BF2B709D9460BB99A1348ABB13F7E",
-                    "keyName": "",
-                    "label": "Survey Chart",
-                    "mapping_x": "survey",
-                    "mapping_ys": [{
-                        "legend": "Survey",
-                        "y": "AFD_COUNT_survey"
-                    }],
-                    "showLegend": "true",
-                    "showValueLabel": "true",
-                    "sortingOrder": "ASC",
-                    "sortingOrderByColumn": "",
-                    "stack": "",
-                    "title": "Survey  Chart",
-                    "userviewCacheDuration": "20",
-                    "userviewCacheScope": "",
-                    "valueAxisLabel": "Category of Survey",
-                    "xAxisDisplayAS": "",
-                    "yaxisPrefix": ""
-                }
-            },
-            {
-                "className": "org.joget.plugin.enterprise.SqlChartMenu",
-                "properties": {
-                    "binder": {
-                        "className": "org.joget.plugin.enterprise.AdvancedFormRowDataListBinder",
-                        "properties": {
-                            "aggregateField": [{
-                                "field": "keterangan",
-                                "function": "AFD_COUNT_"
-                            }],
-                            "customSelectionValue": "",
-                            "extraCondition": "",
-                            "filters": [],
-                            "formDefId": "formv3HasilApprovalV2",
-                            "functionColumns": [],
-                            "groupBy": "keterangan",
-                            "having": [],
-                            "joins": []
-                        }
-                    },
-                    "categoryAxisLabel": "Category",
-                    "chartHeight": "50%",
-                    "chartType": "bar",
-                    "chartWidth": "60%",
-                    "colors": "",
-                    "customFooter": "",
-                    "customHeader": "",
-                    "customId": "",
-                    "datasource": "binder",
-                    "enableOffline": "",
-                    "horizontal": "",
-                    "id": "B91479E9E8EE498DABF1A0A0D2541299",
-                    "keyName": "",
-                    "label": "Pencairan Chart",
-                    "mapping_x": "keterangan",
-                    "mapping_ys": [{
-                        "legend": "Pencairan",
-                        "y": "AFD_COUNT_keterangan"
-                    }],
-                    "showLegend": "true",
-                    "showValueLabel": "true",
-                    "sortingOrder": "ASC",
-                    "sortingOrderByColumn": "",
-                    "stack": "",
-                    "title": "Pencairan Chart",
-                    "userviewCacheDuration": "20",
-                    "userviewCacheScope": "",
-                    "valueAxisLabel": "Amount",
-                    "xAxisDisplayAS": "",
-                    "yaxisPrefix": ""
-                }
+            }],
+            "properties": {
+                "id": "category-C165C3377B4642769EAA98CDCF82FD3F",
+                "label": "Userview"
             }
-        ],
-        "properties": {
-            "id": "category-EE74E4F4426241BD9BC3BC73B1D24AC7",
-            "label": "<i class=\"fa fa-home\"><\/i>Register Survey"
         }
-    }],
+    ],
     "className": "org.joget.apps.userview.model.Userview",
     "properties": {
         "description": "",
@@ -148,9 +170,10 @@
         "__": "",
         "hideThisUserviewInAppCenter": "true",
         "permission": {
-            "className": "",
+            "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
             "properties": {}
         },
+        "tempDisablePermissionChecking": "",
         "theme": {
             "className": "org.joget.plugin.enterprise.ProgressiveTheme",
             "properties": {

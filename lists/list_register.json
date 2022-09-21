@@ -93,12 +93,26 @@
             "width": ""
         },
         {
+            "action": {
+                "className": "",
+                "properties": {}
+            },
+            "alignment": "",
+            "datalist_type": "column",
+            "exclude_export": "",
             "filterable": true,
+            "format": {
+                "className": "",
+                "properties": {}
+            },
+            "headerAlignment": "",
             "hidden": "false",
             "id": "column_6",
-            "label": "Created By Name",
+            "label": "User Input",
             "name": "createdByName",
-            "sortable": "false"
+            "sortable": "false",
+            "style": "",
+            "width": ""
         },
         {
             "action": {
@@ -155,7 +169,24 @@
             "view": "Tablet"
         }
     ],
-    "rowActions": [],
+    "rowActions": [{
+        "className": "org.joget.apps.datalist.lib.HyperlinkDataListAction",
+        "icon": "<i class=\"fas fa-link\"><\/i>",
+        "id": "rowAction_0",
+        "label": "Hyperlink",
+        "name": "Data List Hyperlink Action",
+        "properties": {
+            "confirmation": "",
+            "datalist_type": "row_action",
+            "href": "ps",
+            "hrefColumn": "id",
+            "hrefParam": "id",
+            "label": "View Process Status",
+            "rules": [],
+            "target": "_self"
+        },
+        "type": "text"
+    }],
     "searchPopup": "",
     "showDataWhenFilterSet": "",
     "showPageSizeSelector": "true",

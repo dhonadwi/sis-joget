@@ -75,12 +75,66 @@
                </packageActivityPlugin>
             </entry>
             <entry>
+               <string>registerSurveyV3::toolAnalisClark</string>
+               <packageActivityPlugin>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <activityDefId>toolAnalisClark</activityDefId>
+                  <pluginName>org.joget.tutorial.WorkflowVariableUpdateTool</pluginName>
+                  <pluginProperties>{&quot;workflowVarMapping&quot;:[{&quot;variable&quot;:&quot;analis&quot;,&quot;changeValueTo&quot;:&quot;clark&quot;}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>registerSurveyV3::routeAnalis</string>
+               <packageActivityPlugin>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <activityDefId>routeAnalis</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
+                  <pluginProperties>{&quot;rules&quot;:{&quot;ifrules&quot;:[{&quot;revert&quot;:false,&quot;andOr&quot;:&quot;and&quot;,&quot;conditions&quot;:[{&quot;revert&quot;:false,&quot;variable&quot;:&quot;plafond&quot;,&quot;operation&quot;:&quot;&lt;=&quot;,&quot;value&quot;:&quot;5000000&quot;}],&quot;actions&quot;:[{&quot;type&quot;:&quot;variable&quot;,&quot;name&quot;:&quot;analis&quot;,&quot;value&quot;:&quot;clark&quot;}]}],&quot;else&quot;:[{&quot;type&quot;:&quot;variable&quot;,&quot;name&quot;:&quot;analis&quot;,&quot;value&quot;:&quot;admin&quot;}]}}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>registerSurveyV3::toolAnalisAdmin</string>
+               <packageActivityPlugin>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <activityDefId>toolAnalisAdmin</activityDefId>
+                  <pluginName>org.joget.tutorial.WorkflowVariableUpdateTool</pluginName>
+                  <pluginProperties>{&quot;workflowVarMapping&quot;:[{&quot;variable&quot;:&quot;analis&quot;,&quot;changeValueTo&quot;:&quot;admin&quot;}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
                <string>registerSurveyV3::routeApproval</string>
                <packageActivityPlugin>
                   <processDefId>registerSurveyV3</processDefId>
                   <activityDefId>routeApproval</activityDefId>
                   <pluginName>org.joget.apps.app.lib.RulesDecisionPlugin</pluginName>
                   <pluginProperties>{&quot;rules&quot;:{&quot;ifrules&quot;:[{&quot;revert&quot;:false,&quot;andOr&quot;:&quot;and&quot;,&quot;conditions&quot;:[{&quot;revert&quot;:false,&quot;variable&quot;:&quot;status&quot;,&quot;operation&quot;:&quot;==&quot;,&quot;value&quot;:&quot;approved&quot;}],&quot;actions&quot;:[{&quot;type&quot;:&quot;transition&quot;,&quot;name&quot;:&quot;transition10&quot;,&quot;value&quot;:&quot;&quot;}]}],&quot;else&quot;:[{&quot;type&quot;:&quot;transition&quot;,&quot;name&quot;:&quot;transition11&quot;,&quot;value&quot;:&quot;&quot;}]}}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>registerSurveyV3::toolEmailNotifyApprove</string>
+               <packageActivityPlugin>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <activityDefId>toolEmailNotifyApprove</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{&quot;toSpecific&quot;:&quot;#form.sis_register.email#&quot;,&quot;toParticipantId&quot;:&quot;&quot;,&quot;cc&quot;:&quot;&quot;,&quot;bcc&quot;:&quot;&quot;,&quot;subject&quot;:&quot;Register Approved&quot;,&quot;message&quot;:&quot;Hi, #form.sis_register.name#\n\nData pengajuan anda sebagai berikut:\n         Plafond : #form.sis_register.plafond#\n         Tenor    : #form.sis_register.tenor#\n\nTelah disetujui oleh tim Analis kami dengan rincian sebagai berikut:\n          Plafond : #form.sis_approval.plafond_acc#\n          Tenor    : #form.sis_approval.tenor_acc# Bulan\n\nSilahkan datang ke kantor kami pada jam kerja untuk proses pencairan. Terimakasih&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;training@itasoft.co.id&quot;,&quot;host&quot;:&quot;smtp.gmail.com&quot;,&quot;port&quot;:&quot;465&quot;,&quot;security&quot;:&quot;SSL&quot;,&quot;username&quot;:&quot;training@itasoft.co.id&quot;,&quot;password&quot;:&quot;%%%%XskVHzet43Vwp0R/SEu9dnRZ1L5EIXTu%%%%&quot;,&quot;formDefId&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>registerSurveyV3::toolCekPlafond</string>
+               <packageActivityPlugin>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <activityDefId>toolCekPlafond</activityDefId>
+                  <pluginName>org.joget.tutorial.WorkflowVariableUpdateTool</pluginName>
+                  <pluginProperties>{&quot;workflowVarMapping&quot;:[{&quot;variable&quot;:&quot;plafond&quot;,&quot;changeValueTo&quot;:&quot;#form.sis_register.plafond#&quot;}]}</pluginProperties>
+               </packageActivityPlugin>
+            </entry>
+            <entry>
+               <string>registerSurveyV3::toolSendReminder</string>
+               <packageActivityPlugin>
+                  <processDefId>registerSurveyV3</processDefId>
+                  <activityDefId>toolSendReminder</activityDefId>
+                  <pluginName>org.joget.apps.app.lib.EmailTool</pluginName>
+                  <pluginProperties>{&quot;toSpecific&quot;:&quot;minisshurang3@gmail.com&quot;,&quot;toParticipantId&quot;:&quot;&quot;,&quot;cc&quot;:&quot;&quot;,&quot;bcc&quot;:&quot;&quot;,&quot;subject&quot;:&quot;Urgent Analis  Register&quot;,&quot;message&quot;:&quot;Hai Analis,( #variable.analis# )\n\nSegera analisa register yang telah di submit sebelum diproses oleh User lain.&quot;,&quot;isHtml&quot;:&quot;&quot;,&quot;from&quot;:&quot;training@itasoft.co.id&quot;,&quot;host&quot;:&quot;smtp.gmail.com&quot;,&quot;port&quot;:&quot;465&quot;,&quot;security&quot;:&quot;SSL&quot;,&quot;username&quot;:&quot;training@itasoft.co.id&quot;,&quot;password&quot;:&quot;%%%%w2msnNo9mapba6U9YPx0YG2x6wXc9wmk%%%%&quot;,&quot;formDefId&quot;:&quot;&quot;,&quot;fields&quot;:[],&quot;files&quot;:[],&quot;icsAttachement&quot;:&quot;&quot;}</pluginProperties>
                </packageActivityPlugin>
             </entry>
          </packageActivityPluginMap>
@@ -108,8 +162,8 @@
                <packageParticipant>
                   <processDefId>registerSurveyV3</processDefId>
                   <participantId>analisRegisterSurveyV3</participantId>
-                  <type>user</type>
-                  <value>clark,admin</value>
+                  <type>workflowVariable</type>
+                  <value>analis,user</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>

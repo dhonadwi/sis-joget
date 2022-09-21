@@ -14,7 +14,7 @@
                     "defaultPortletWidth": "1",
                     "enableOffline": "",
                     "id": "C09CE06311DF470785B9F335B7E88851",
-                    "label": "Dashboard",
+                    "label": "<i class=\"fa fa-tachometer\"><\/i> Dashboard",
                     "mode": "",
                     "resizable": "true",
                     "userviewCacheDuration": "20",
@@ -65,7 +65,7 @@
                         "enableOffline": "",
                         "id": "0883ea80-2c64-4f76-8587-40881ad4c88d",
                         "keyName": "",
-                        "label": "Inbox",
+                        "label": "<i class=\"fas fa-inbox\"><\/i> Inbox",
                         "list-customFooter": "",
                         "list-customHeader": "",
                         "rowCount": "true",
@@ -99,12 +99,28 @@
             ],
             "properties": {
                 "id": "category-EC07621020CE44879BE89349A2D3F4CD",
-                "label": "Register"
+                "label": "<i class=\"fas fa-server\"><\/i> Register"
             }
         },
         {
             "className": "org.joget.apps.userview.model.UserviewCategory",
             "menus": [
+                {
+                    "className": "org.joget.plugin.enterprise.SlaReportMenu",
+                    "properties": {
+                        "cacheAllLinks": "",
+                        "customFooter": "",
+                        "customHeader": "",
+                        "customId": "",
+                        "enableOffline": "",
+                        "hasSlaOnly": "",
+                        "id": "7525E0514D034AB4A165ECF9D961D5F6",
+                        "label": "SLA Report",
+                        "processDefId": "registerSurveyV3",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
+                },
                 {
                     "className": "org.joget.api.lib.ApiKeyMenu",
                     "properties": {
@@ -378,7 +394,7 @@
                     "properties": {
                         "customFooter": "",
                         "customHeader": "",
-                        "customId": "",
+                        "customId": "ps",
                         "enableOffline": "",
                         "eventClick": "",
                         "id": "44A0C450E66B4396A29E8330E94D451E",
@@ -393,11 +409,24 @@
                         "userviewCacheScope": "",
                         "viewPermission": "requester;performers;admin"
                     }
+                },
+                {
+                    "className": "org.joget.apps.userview.lib.Link",
+                    "properties": {
+                        "customId": "",
+                        "enableOffline": "",
+                        "id": "171F6CA276F246309569BD4518C2549E",
+                        "label": "Link Dashboard",
+                        "target": "self",
+                        "url": "/jw/web/userview/sis/dashboard",
+                        "userviewCacheDuration": "20",
+                        "userviewCacheScope": ""
+                    }
                 }
             ],
             "properties": {
                 "id": "category-798ea7ec-f985-4ec4-95f0-fe2f9189a660",
-                "label": "<i class=\"fa fa-tasks\"><\/i>Info"
+                "label": "<i class=\"fas fa-info-circle\"><\/i> Info"
             }
         },
         {
@@ -592,51 +621,45 @@
         "__": "",
         "hideThisUserviewInAppCenter": "",
         "permission": {
-            "className": "",
+            "className": "org.joget.apps.userview.lib.LoggedInUserPermission",
             "properties": {}
         },
+        "tempDisablePermissionChecking": "",
         "theme": {
-            "className": "org.joget.plugin.enterprise.XadminTheme",
+            "className": "org.joget.plugin.enterprise.ProgressiveTheme",
             "properties": {
+                "accentColor": "BLUE",
+                "buttonColor": "GREY",
+                "buttonTextColor": "WHITE",
                 "css": "",
                 "disableHelpGuide": "",
                 "disablePush": "",
                 "disablePwa": "",
-                "disabledFineFont": "",
                 "displayCategoryLabel": "",
                 "enableResponsiveSwitch": "true",
                 "fav_icon": "",
+                "fontColor": "WHITE",
                 "fontControl": "",
+                "homeAttractBanner": "",
                 "homeUrl": "",
-                "inbox": "current",
+                "horizontal_menu": "true",
+                "inbox": "all",
                 "js": "",
-                "loginBackground": "",
                 "loginPageBottom": "",
                 "loginPageTop": "",
                 "logo": "",
+                "menuFontColor": "BLACK",
+                "primaryColor": "INDIGO",
                 "profile": "",
                 "removeAssignmentTitle": "",
-                "reopenTab": "",
                 "shortcut": [],
                 "shortcutLinkLabel": "Shortcut",
+                "subfooter": "",
+                "subheader": "",
+                "themeScheme": "light",
                 "urlsToCache": "",
                 "userImage": "",
-                "userMenu": [],
-                "xbackground": "#F2F1F2",
-                "xbuttonBackground": "#1A237E",
-                "xbuttonColor": "#FFFFFF",
-                "xfontColor": "#666666",
-                "xfooterBackground": "#F2F1F2",
-                "xfooterColor": "#666666",
-                "xheaderColor": "#000051",
-                "xlinkActiveColor": "#0069C0",
-                "xlinkColor": "#0D6EFD",
-                "xnavActiveLinkBackground": "#1A237E",
-                "xnavActiveLinkColor": "#FFFFFF",
-                "xnavBackground": "#EEEEEE",
-                "xnavLinkBackground": "#EEEEEE",
-                "xnavLinkColor": "#333333",
-                "xprimaryColor": "#534BAE"
+                "userMenu": []
             }
         },
         "userviewDescription": "",

@@ -1,33 +1,68 @@
 {
     "className": "org.joget.apps.form.model.Form",
-    "elements": [{
-        "className": "org.joget.apps.form.model.Section",
-        "elements": [{
-            "className": "org.joget.apps.form.model.Column",
-            "elements": [
-                {
-                    "className": "org.joget.apps.form.lib.IdGeneratorField",
+    "elements": [
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.CheckBox",
                     "properties": {
-                        "envVariable": "counter",
-                        "format": "ID-#date.yy-MM#-????",
-                        "hidden": "true",
-                        "id": "register_id",
-                        "label": "ID Register",
+                        "controlField": "",
+                        "id": "keanggotaan",
+                        "label": "Keanggotaan",
+                        "options": [{
+                            "grouping": "",
+                            "label": "Baru",
+                            "value": "baru"
+                        }],
+                        "optionsBinder": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "baru",
                         "workflowVariable": ""
                     }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section4",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
                 },
-                {
-                    "className": "org.joget.apps.form.lib.IdGeneratorField",
-                    "properties": {
-                        "envVariable": "counter",
-                        "format": "ID-#date.yy-MM#-????",
-                        "hidden": "",
-                        "id": "register_id",
-                        "label": "ID Register",
-                        "workflowVariable": ""
-                    }
+                "permission": {
+                    "className": "",
+                    "properties": {}
                 },
-                {
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
                     "className": "org.joget.apps.form.lib.TextField",
                     "properties": {
                         "encryption": "",
@@ -41,228 +76,357 @@
                         "storeNumeric": "",
                         "style": "",
                         "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
+                            "className": "org.joget.apps.form.lib.DuplicateValueValidator",
                             "properties": {
+                                "errorDuplicateMsg": "Nasabah sudah pernah pengajuan",
+                                "errorFormatMsg": "",
+                                "fieldId": "ktp",
+                                "formDefId": "formV3SubmitRegister",
                                 "mandatory": "true",
-                                "message": "",
-                                "type": "numeric"
+                                "regex": ""
                             }
                         },
                         "value": "",
                         "workflowVariable": ""
                     }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "sectionKtpInput",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
                 },
-                {
-                    "className": "org.joget.apps.form.lib.TextField",
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [{
+                    "className": "org.joget.apps.form.lib.SelectBox",
                     "properties": {
-                        "encryption": "",
-                        "id": "name",
-                        "label": "Name",
-                        "maxlength": "",
-                        "placeholder": "",
+                        "controlField": "",
+                        "id": "ktp_ro",
+                        "label": "Pilih No. KTP",
+                        "multiple": "",
+                        "options": [],
+                        "optionsBinder": {
+                            "className": "org.joget.plugin.enterprise.JdbcOptionsBinder",
+                            "properties": {
+                                "addEmpty": "",
+                                "cacheInterval": "",
+                                "jdbcDatasource": "default",
+                                "sql": "SELECT c_ktp, c_ktp from app_fd_sis_register ORDER BY c_ktp asc;",
+                                "useAjax": ""
+                            }
+                        },
                         "readonly": "",
                         "readonlyLabel": "",
                         "size": "",
-                        "storeNumeric": "",
-                        "style": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "",
-                                "type": ""
-                            }
-                        },
-                        "value": "",
-                        "workflowVariable": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.TextField",
-                    "properties": {
-                        "encryption": "",
-                        "id": "email",
-                        "label": "Email",
-                        "maxlength": "",
-                        "placeholder": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "size": "",
-                        "storeNumeric": "",
-                        "style": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "",
-                                "type": "email"
-                            }
-                        },
-                        "value": "",
-                        "workflowVariable": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.TextField",
-                    "properties": {
-                        "encryption": "",
-                        "id": "plafond",
-                        "label": "Plafond",
-                        "maxlength": "",
-                        "numOfDecimal": "0",
-                        "placeholder": "",
-                        "postfix": "",
-                        "prefix": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "size": "",
-                        "storeNumeric": "true",
-                        "style": "euro",
-                        "useThousandSeparator": "true",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "",
-                                "type": "numeric"
-                            }
-                        },
-                        "value": "",
-                        "workflowVariable": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.TextField",
-                    "properties": {
-                        "encryption": "",
-                        "id": "tenor",
-                        "label": "Tenor",
-                        "maxlength": "2",
-                        "numOfDecimal": "0",
-                        "placeholder": "",
-                        "postfix": "Month",
-                        "prefix": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "size": "",
-                        "storeNumeric": "",
-                        "style": "euro",
-                        "useThousandSeparator": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "",
-                                "type": "numeric"
-                            }
-                        },
-                        "value": "",
-                        "workflowVariable": ""
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.FileUpload",
-                    "properties": {
-                        "attachment": "",
-                        "fileType": ".jpeg;.jpg;.png",
-                        "fileTypeMsg": "Invalid file type",
-                        "id": "foto_jaminan",
-                        "label": "Foto",
-                        "maxSize": "3000",
-                        "maxSizeMsg": "File size limit exceeded",
-                        "multiple": "true",
-                        "padding": "",
-                        "permissionType": "",
-                        "readonly": "",
-                        "removeFile": "",
-                        "resizeHeight": "",
-                        "resizeMethod": "",
-                        "resizeQuality": "0.8",
-                        "resizeWidth": "",
-                        "size": "",
-                        "validator": {
-                            "className": "org.joget.apps.form.lib.DefaultValidator",
-                            "properties": {
-                                "mandatory": "true",
-                                "message": "",
-                                "type": ""
-                            }
-                        }
-                    }
-                },
-                {
-                    "className": "org.joget.apps.form.lib.TextField",
-                    "properties": {
-                        "encryption": "",
-                        "id": "user_input",
-                        "label": "User Input",
-                        "maxlength": "",
-                        "permissionHidden": "",
-                        "placeholder": "",
-                        "readonly": "true",
-                        "readonlyLabel": "true",
-                        "size": "",
-                        "storeNumeric": "",
-                        "style": "",
                         "validator": {
                             "className": "",
                             "properties": {}
                         },
-                        "value": "#currentUser.firstName# #currentUser.lastName#",
+                        "value": "",
                         "workflowVariable": ""
                     }
+                }],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "sectionKtpSelect",
+                "join": "",
+                "label": "",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
                 },
-                {
-                    "className": "org.joget.apps.form.lib.SubForm",
-                    "properties": {
-                        "formDefId": "formv3AuditTrails",
-                        "id": "field10",
-                        "label": "",
-                        "loadBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
-                        "noframe": "true",
-                        "parentSubFormId": "register_iddd",
-                        "permissionHidden": "",
-                        "readonly": "",
-                        "readonlyLabel": "",
-                        "storeBinder": {
-                            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
-                            "properties": {}
-                        },
-                        "subFormParentId": "audit_id"
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
+        },
+        {
+            "className": "org.joget.apps.form.model.Section",
+            "elements": [{
+                "className": "org.joget.apps.form.model.Column",
+                "elements": [
+                    {
+                        "className": "org.joget.apps.form.lib.IdGeneratorField",
+                        "properties": {
+                            "envVariable": "counter",
+                            "format": "ID-#date.yy-MM#-????",
+                            "hidden": "true",
+                            "id": "register_id",
+                            "label": "ID Register",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.IdGeneratorField",
+                        "properties": {
+                            "envVariable": "counter",
+                            "format": "ID-#date.yy-MM#-????",
+                            "hidden": "",
+                            "id": "register_id",
+                            "label": "ID Register",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "name",
+                            "label": "Name",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "",
+                                    "type": ""
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "email",
+                            "label": "Email",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "",
+                                    "type": "email"
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "plafond",
+                            "label": "Plafond",
+                            "maxlength": "",
+                            "numOfDecimal": "0",
+                            "placeholder": "",
+                            "postfix": "",
+                            "prefix": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "true",
+                            "style": "euro",
+                            "useThousandSeparator": "true",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "",
+                                    "type": "numeric"
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "tenor",
+                            "label": "Tenor",
+                            "maxlength": "2",
+                            "numOfDecimal": "0",
+                            "placeholder": "",
+                            "postfix": "Month",
+                            "prefix": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "euro",
+                            "useThousandSeparator": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "",
+                                    "type": "numeric"
+                                }
+                            },
+                            "value": "",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.FileUpload",
+                        "properties": {
+                            "attachment": "",
+                            "fileType": ".jpeg;.jpg;.png",
+                            "fileTypeMsg": "Invalid file type",
+                            "id": "foto_jaminan",
+                            "label": "Foto",
+                            "maxSize": "3000",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "multiple": "true",
+                            "padding": "",
+                            "permissionType": "",
+                            "readonly": "",
+                            "removeFile": "",
+                            "resizeHeight": "",
+                            "resizeMethod": "",
+                            "resizeQuality": "0.8",
+                            "resizeWidth": "",
+                            "size": "",
+                            "validator": {
+                                "className": "org.joget.apps.form.lib.DefaultValidator",
+                                "properties": {
+                                    "mandatory": "true",
+                                    "message": "",
+                                    "type": ""
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.TextField",
+                        "properties": {
+                            "encryption": "",
+                            "id": "user_input",
+                            "label": "User Input",
+                            "maxlength": "",
+                            "permissionHidden": "",
+                            "placeholder": "",
+                            "readonly": "true",
+                            "readonlyLabel": "true",
+                            "size": "",
+                            "storeNumeric": "",
+                            "style": "",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "value": "#currentUser.firstName# #currentUser.lastName#",
+                            "workflowVariable": ""
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.SubForm",
+                        "properties": {
+                            "formDefId": "formv3AuditTrails",
+                            "id": "field10",
+                            "label": "",
+                            "loadBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "noframe": "true",
+                            "parentSubFormId": "register_iddd",
+                            "permissionHidden": "",
+                            "readonly": "",
+                            "readonlyLabel": "",
+                            "storeBinder": {
+                                "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+                                "properties": {}
+                            },
+                            "subFormParentId": "audit_id"
+                        }
+                    },
+                    {
+                        "className": "org.joget.apps.form.lib.CustomHTML",
+                        "properties": {
+                            "autoPopulate": "",
+                            "id": "field12",
+                            "label": "",
+                            "value": "<script>\n    $(document).ready(function() {\n        $(\"select[name=ktp_ro]\").attr('readonly',true);\n        $('#sectionKtpSelect').hide()\n        $('[name=keanggotaan]').on('change', function() {\n            if(this.checked){\n                console.log('ceklist baru')\n                $('#sectionKtpSelect').hide()\n                $('#sectionKtpInput').show()\n                $(\"select[name=ktp_ro]\").attr('readonly',true);\n                $(\"input[name=ktp]\").removeAttr('readonly');\n                \n                // $(\"#sectionKtpSelect\").removeAttr('disabled');\n                // $(\"select[name=ktp_ro]\").attr('readonly',true);\n            } else {\n                console.log('gak ceklist = RO')\n                $('#sectionKtpInput').hide()\n                $('#sectionKtpSelect').show()\n                $(\"select[name=ktp_ro]\").removeAttr('readonly');\n                $(\"input[name=ktp]\").attr('readonly',true);\n                $(\"input[name=ktp]\").attr('disabled','disabled');\n            }\n        });\n        $(\"select[name=ktp_ro]\").on('change', function() {\n            $(\"input[name=ktp]\").val(this.value)\n            console.log(this.value)\n        })\n    })\n<\/script>"
+                        }
                     }
-                }
-            ],
-            "properties": {"width": "100%"}
-        }],
-        "properties": {
-            "comment": "",
-            "id": "section1",
-            "join": "",
-            "label": "Register",
-            "loadBinder": {
-                "className": "",
-                "properties": {}
-            },
-            "permission": {
-                "className": "",
-                "properties": {}
-            },
-            "permissionReadonly": "",
-            "readonly": "",
-            "readonlyLabel": "",
-            "regex": "",
-            "reverse": "",
-            "storeBinder": {
-                "className": "",
-                "properties": {}
-            },
-            "visibilityControl": "",
-            "visibilityValue": ""
+                ],
+                "properties": {"width": "100%"}
+            }],
+            "properties": {
+                "comment": "",
+                "id": "section1",
+                "join": "",
+                "label": "Register",
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permissionReadonly": "",
+                "readonly": "",
+                "readonlyLabel": "",
+                "regex": "",
+                "reverse": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "visibilityControl": "",
+                "visibilityValue": ""
+            }
         }
-    }],
+    ],
     "properties": {
         "description": "",
         "id": "formV3SubmitRegister",
