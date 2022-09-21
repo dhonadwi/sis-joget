@@ -67,6 +67,7 @@
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="analisRegisterSurveyV3" Name="Analis Register">
+                    <Limit>1</Limit>
                     <Implementation>
                         <No/>
                     </Implementation>
@@ -92,7 +93,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="analisRegisterSurveyV3"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="451.9033889770508,94.88635826953126"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="451.9033889770508,96.87500573046873"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="routeSurveyOrNonSurvey" Name="Survey?">
@@ -236,7 +237,7 @@
                     </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="systemRegisterSurveyV3"/>
-                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="196.96021270751953,148.28125573046873"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="205.93750762939453,79.27557946093748"/>
                     </ExtendedAttributes>
                 </Activity>
                 <Activity Id="toolAnalisClark" Name="Analis Clark">
