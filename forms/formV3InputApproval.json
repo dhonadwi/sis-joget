@@ -257,6 +257,27 @@
                         "value": "#variable.plafond#",
                         "workflowVariable": ""
                     }
+                },
+                {
+                    "className": "org.joget.apps.form.lib.TextField",
+                    "properties": {
+                        "encryption": "",
+                        "id": "field7",
+                        "label": "Variabel Analis",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "readonly": "",
+                        "readonlyLabel": "",
+                        "size": "",
+                        "storeNumeric": "",
+                        "style": "",
+                        "validator": {
+                            "className": "",
+                            "properties": {}
+                        },
+                        "value": "#variable.analis#",
+                        "workflowVariable": ""
+                    }
                 }
             ],
             "properties": {"width": "100%"}
