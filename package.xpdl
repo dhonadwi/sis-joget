@@ -237,9 +237,52 @@
                 <Activity Id="routeAnalis" Name="Analis?">
                     <Route/>
                     <Performer>analisRegisterSurveyV3</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Split Type="XOR">
+                                <TransitionRefs>
+                                    <TransitionRef Id="transition20"/>
+                                    <TransitionRef Id="transition21"/>
+                                </TransitionRefs>
+                            </Split>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="analisRegisterSurveyV3"/>
                         <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="82.99715423583984,58.19600487597657"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="toolAnalisAdmin" Name="Analis Admin">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>systemRegisterSurveyV3</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="systemRegisterSurveyV3"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="94.97159576416016,44.28980065234373"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="route5" Name="Analis?">
+                    <Route/>
+                    <Performer>analisRegisterSurveyV3</Performer>
+                    <TransitionRestrictions>
+                        <TransitionRestriction>
+                            <Join Type="XOR"/>
+                        </TransitionRestriction>
+                    </TransitionRestrictions>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="analisRegisterSurveyV3"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="185.99430084228516,140.2272853935547"/>
+                    </ExtendedAttributes>
+                </Activity>
+                <Activity Id="toolAnalisClark" Name="Analis Clark">
+                    <Implementation>
+                        <Tool Id="default_application"/>
+                    </Implementation>
+                    <Performer>systemRegisterSurveyV3</Performer>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_PARTICIPANT_ID" Value="systemRegisterSurveyV3"/>
+                        <ExtendedAttribute Name="JaWE_GRAPH_OFFSET" Value="153.99146270751953,139.46027184374998"/>
                     </ExtendedAttributes>
                 </Activity>
             </Activities>
@@ -329,7 +372,29 @@
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
                 </Transition>
-                <Transition From="routeAnalis" Id="transition20" To="analisRegisterSurveyV3">
+                <Transition From="routeAnalis" Id="transition20" To="toolAnalisAdmin">
+                    <Condition Type="CONDITION">plafond &gt; 5000000</Condition>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="toolAnalisAdmin" Id="transition22" To="route5">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="routeAnalis" Id="transition21" To="toolAnalisClark">
+                    <Condition Type="OTHERWISE"/>
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="toolAnalisClark" Id="transition23" To="route5">
+                    <ExtendedAttributes>
+                        <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
+                    </ExtendedAttributes>
+                </Transition>
+                <Transition From="route5" Id="transition24" To="analisRegisterSurveyV3">
                     <ExtendedAttributes>
                         <ExtendedAttribute Name="JaWE_GRAPH_TRANSITION_STYLE" Value="NO_ROUTING_ORTHOGONAL"/>
                     </ExtendedAttributes>
